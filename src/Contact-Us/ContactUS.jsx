@@ -1,6 +1,40 @@
-import React from "react";
+import React, { useState } from "react";
 import "./contact-us.css";
+
 export default function ContactUS() {
+  const [name, setName] = useState("Laurence Svekis");
+  const [email, setEmail] = useState("gapp*****@gmail.com");
+  const [message, setMessage] = useState("Hello World");
+  const [errorMessage, setErrorMessage] = useState("");
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    let errorMessage = "";
+
+    if (name.length < 3) {
+      errorMessage += "<br>Name needs to be 3 characters";
+    }
+
+    if (email.length < 5) {
+      errorMessage += "<br>Email is missing";
+    }
+
+    if (errorMessage) {
+      setErrorMessage(errorMessage);
+      setTimeout(() => {
+        setErrorMessage("");
+      }, 5000);
+    } else {
+      const mailOptions = {
+        from: "test@yourdomain.com",
+        to: "marwanabdelwahab9@gmail.com",
+        replyTo: "jason@yourdomain.com",
+        subject: message,
+        html: "Mail of test sendmail",
+      };
+    }
+  };
   return (
     <div className="bg-white">
       <section class="contact" id="contact">
@@ -42,18 +76,39 @@ export default function ContactUS() {
           </div>
 
           <div class="row">
-            <form action="" id="myform">
-              <input id="name" type="text" placeholder="name" class="box" />
-              <input id="email" type="email" placeholder="email" class="box" />
+            <form action="" id="myform" onSubmit={handleSubmit}>
+              {errorMessage && (
+                <div
+                  style={{ color: "red" }}
+                  dangerouslySetInnerHTML={{ __html: errorMessage }}
+                ></div>
+              )}
+              <input
+                id="name"
+                type="text"
+                class="box"
+                value={name}
+                onChange={(e) => setName(e.target.value)}
+              />
+              <input
+                id="email"
+                type="email"
+                class="box"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+              />
               <textarea
                 id="message"
                 name=""
-                placeholder="message"
                 class="box"
                 cols="30"
                 rows="10"
+                value={message}
+                onChange={(e) => setMessage(e.target.value)}
               ></textarea>
-              <input type="submit" value="send" class="btn" />
+              <button type="submit" class="btn">
+                send
+              </button>
             </form>
           </div>
         </div>

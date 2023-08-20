@@ -20,7 +20,7 @@ export default function Navigationbar() {
           className="bg-black   "
         >
           <Container>
-            <Navbar.Brand href="#" className="logo">
+            <Navbar.Brand href="/" className="logo">
               <img src={logo} alt="" className="w-100" />
             </Navbar.Brand>
             <Navbar.Toggle

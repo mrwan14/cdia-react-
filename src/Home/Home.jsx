@@ -91,7 +91,7 @@ export default function Home() {
           </h1>
 
           <div className="box-container ">
-            <div className="box">
+            <div className="box  ms-5">
               <div class="flip-card-inner">
                 <div class="flip-card-front  ">
                   <div className="my-5">
@@ -114,7 +114,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="box">
+            <div className="box ms-5">
               <div class="flip-card-inner">
                 <div class="flip-card-front  ">
                   <div className="my-5">
@@ -137,7 +137,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="box">
+            <div className="box ms-5">
               <div class="flip-card-inner">
                 <div class="flip-card-front  ">
                   <div className="my-5">
