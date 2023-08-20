@@ -29,6 +29,9 @@ body {
   background-color: #000000;
 }
 
+.services section {
+  margin-top: 300px;
+}
 /* global section ends */
 
 html {
@@ -143,6 +146,11 @@ ul {
 {
   background-color: #3a3c39;
 } */
+
+.services {
+  background-color: #2f2e2e;
+}
+
 .services .box-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
@@ -161,7 +169,7 @@ ul {
   align-items: center;
   width: 400px;
   height: 500px;
-  background-color: #000;
+  background-color: #2f2e2e;
 }
 .box {
   perspective: 1000px;
@@ -187,13 +195,12 @@ ul {
   height: 100%;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-  box-shadow: 5px 5px 5px 5px var(--main-color);
   border-radius: 10px;
 }
 
 .flip-card-front {
-  background-color: #ffffff;
-  color: black;
+  background-color: black;
+  color: rgb(255, 255, 255);
 }
 .flip-card-front h1 {
   font-size: 80px;
@@ -202,8 +209,8 @@ ul {
   margin-top: 10px;
 }
 .flip-card-back {
-  background-color: white;
-  color: rgb(0, 0, 0);
+  background-color: black;
+  color: rgb(255, 255, 255);
   transform: rotateX(180deg);
 }
 .services .box-container .box img {

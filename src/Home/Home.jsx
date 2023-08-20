@@ -25,19 +25,20 @@ export default function Home() {
   return (
     <div>
       <Swiper />
-      <div className="vision container my-5 ">
-        <div className="row    ">
-          <div className="col-md-5 text-center bg-white rounded-5  my-3">
-            <div className="d-flex justify-content-center ">
-              <div className="img-container ">
-                {" "}
-                <img src={vision} alt="" className="w-75" />
-              </div>{" "}
-            </div>
-            <h3 className=" fw-bolder fs-2 fst-italic ">Our Vision</h3>
-            <div className="vision-desc">
-              <ReadMoreReact
-                text="
+      <div className="">
+        <div className="vision container my-5 ">
+          <div className="row    ">
+            <div className="col-md-5 text-center bg-white rounded-5  my-3">
+              <div className="d-flex justify-content-center ">
+                <div className="img-container ">
+                  {" "}
+                  <img src={vision} alt="" className="w-75" />
+                </div>{" "}
+              </div>
+              <h3 className=" fw-bolder fs-2 fst-italic ">Our Vision</h3>
+              <div className="vision-desc">
+                <ReadMoreReact
+                  text="
               At [Cdia], our vision is to become a global leader in technology and marketing, revolutionizing how businesses succeed. We aim to blend innovative software solutions with creative marketing strategies to set new standards of excellence. By using the latest technologies like AI and IoT, we want to create game-changing solutions that benefit industries worldwide.
               
               We're driven to reshape marketing, making it more engaging and data-driven. Our goal is to help businesses connect better with their customers by predicting trends and using imaginative approaches. We see ourselves as agents of positive change, contributing to communities around the world through technology and marketing.
@@ -46,24 +47,24 @@ export default function Home() {
               
               We're passionate about our employees' growth and creativity. Our workplace will be a hub of innovation, attracting the best talents who can thrive and contribute to our vision. Ultimately, at [Cdia], our vision is to shape a future where technology and marketing work hand in hand, driving businesses to unprecedented success and leaving a lasting impact on the world.
               "
-                min={200}
-                ideal={400}
-                max={500}
-                readMoreText=" read more...."
-              />
+                  min={200}
+                  ideal={400}
+                  max={500}
+                  readMoreText=" read more...."
+                />
+              </div>
             </div>
-          </div>
-          <div className="col-md-5 offset-lg-2 text-center bg-white rounded-5 my-3">
-            <div className="d-flex justify-content-center ">
-              <div className="img-container ">
-                {" "}
-                <img src={mission} alt="" className="w-75" />
+            <div className="col-md-5 offset-lg-2 text-center bg-white rounded-5 my-3">
+              <div className="d-flex justify-content-center ">
+                <div className="img-container ">
+                  {" "}
+                  <img src={mission} alt="" className="w-75" />
+                </div>{" "}
               </div>{" "}
-            </div>{" "}
-            <h3 className=" fw-bolder fs-2 fst-italic ">Our Mission</h3>
-            <div className="vision-desc">
-              <ReadMoreReact
-                text="
+              <h3 className=" fw-bolder fs-2 fst-italic ">Our Mission</h3>
+              <div className="vision-desc">
+                <ReadMoreReact
+                  text="
               At [Cdia], our vision is to become a global leader in technology and marketing, revolutionizing how businesses succeed. We aim to blend innovative software solutions with creative marketing strategies to set new standards of excellence. By using the latest technologies like AI and IoT, we want to create game-changing solutions that benefit industries worldwide.
               
               We're driven to reshape marketing, making it more engaging and data-driven. Our goal is to help businesses connect better with their customers by predicting trends and using imaginative approaches. We see ourselves as agents of positive change, contributing to communities around the world through technology and marketing.
@@ -72,94 +73,97 @@ export default function Home() {
               
               We're passionate about our employees' growth and creativity. Our workplace will be a hub of innovation, attracting the best talents who can thrive and contribute to our vision. Ultimately, at [Cdia], our vision is to shape a future where technology and marketing work hand in hand, driving businesses to unprecedented success and leaving a lasting impact on the world.
               "
-                min={200}
-                ideal={400}
-                max={500}
-                readMoreText=" read more...."
-              />
+                  min={200}
+                  ideal={400}
+                  max={500}
+                  readMoreText=" read more...."
+                />
+              </div>
             </div>
           </div>
         </div>
       </div>
-      <section className="services container my-5" id="services">
-        <h1 className="heading text-white">
-          our <span>services</span>
-        </h1>
+      <div className="services">
+        <section className=" container  mb-5" id="services">
+          <h1 className="heading text-white">
+            our <span>services</span>
+          </h1>
 
-        <div className="box-container ">
-          <div className="box">
-            <div class="flip-card-inner">
-              <div class="flip-card-front  ">
-                <div className="my-5">
-                  <img src={mediaProduction} alt="Avatar" />
-                  <h1> MEDIA</h1>
-                  <h3 className="">Production</h3>
+          <div className="box-container ">
+            <div className="box">
+              <div class="flip-card-inner">
+                <div class="flip-card-front  ">
+                  <div className="my-5">
+                    <img src={mediaProduction} alt="Avatar" />
+                    <h1> MEDIA</h1>
+                    <h3 className="text-white">Production</h3>
+                  </div>
+                </div>
+                <div class="flip-card-back d-flex  align-items-center">
+                  <div>
+                    <h1 className="">Media Production</h1>
+                    <p className="lead  fw-bold">
+                      We Design All Kinds Of Websites For Our Clients - From
+                      Landing Pages To Online Stores
+                    </p>
+                    <a href="mobileWorks.html" className="btn">
+                      learn more
+                    </a>
+                  </div>
                 </div>
               </div>
-              <div class="flip-card-back d-flex  align-items-center">
-                <div>
-                  <h1 className="">Media Production</h1>
-                  <p className="lead  fw-bold">
-                    We Design All Kinds Of Websites For Our Clients - From
-                    Landing Pages To Online Stores
-                  </p>
-                  <a href="mobileWorks.html" className="btn">
-                    learn more
-                  </a>
+            </div>
+            <div className="box">
+              <div class="flip-card-inner">
+                <div class="flip-card-front  ">
+                  <div className="my-5">
+                    <img src={digitalMarketing} alt="Avatar" />
+                    <h1> DIGITAL</h1>
+                    <h3 className="text-white">Marketing</h3>
+                  </div>
+                </div>
+                <div class="flip-card-back d-flex  align-items-center">
+                  <div>
+                    <h1 className="">digital marketing</h1>
+                    <p className="lead  fw-bold">
+                      our team has a successful track record of helping brands
+                      scale profitably based on high-performing strategies
+                    </p>
+                    <a href="mobileWorks.html" className="btn">
+                      learn more
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="box">
+              <div class="flip-card-inner">
+                <div class="flip-card-front  ">
+                  <div className="my-5">
+                    <img src={software} alt="Avatar" />
+                    <h1> SOFTWARE</h1>
+                    <h3 className="text-white">Mobile Application</h3>
+                  </div>
+                </div>
+                <div class="flip-card-back d-flex  align-items-center">
+                  <div>
+                    <h1 className="">Mobile Application</h1>
+                    <p className="lead  fw-bold">
+                      we design and develop mobile apps that delight your users
+                      and grow your business. enterprise-grade development
+                      combined with outstanding design
+                    </p>
+                    <a href="mobileWorks.html" className="btn">
+                      learn more
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-          <div className="box">
-            <div class="flip-card-inner">
-              <div class="flip-card-front  ">
-                <div className="my-5">
-                  <img src={digitalMarketing} alt="Avatar" />
-                  <h1> DIGITAL</h1>
-                  <h3 className="">Marketing</h3>
-                </div>
-              </div>
-              <div class="flip-card-back d-flex  align-items-center">
-                <div>
-                  <h1 className="">digital marketing</h1>
-                  <p className="lead  fw-bold">
-                    our team has a successful track record of helping brands
-                    scale profitably based on high-performing strategies
-                  </p>
-                  <a href="mobileWorks.html" className="btn">
-                    learn more
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="box">
-            <div class="flip-card-inner">
-              <div class="flip-card-front  ">
-                <div className="my-5">
-                  <img src={software} alt="Avatar" />
-                  <h1> SOFTWARE</h1>
-                  <h3 className="">Mobile Application</h3>
-                </div>
-              </div>
-              <div class="flip-card-back d-flex  align-items-center">
-                <div>
-                  <h1 className="">Mobile Application</h1>
-                  <p className="lead  fw-bold">
-                    we design and develop mobile apps that delight your users
-                    and grow your business. enterprise-grade development
-                    combined with outstanding design
-                  </p>
-                  <a href="mobileWorks.html" className="btn">
-                    learn more
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section className="my-5">
+        </section>
+      </div>
+      <section className="my-5 our-clients">
         {" "}
         <h1 class="heading text-white">
           <span>Our</span> Clinets
