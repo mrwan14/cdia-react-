@@ -7,6 +7,7 @@ import About from "./About/About";
 import Home from "./Home/Home";
 import Navigationbar from "./Navbar/Navbar";
 import Footer from "./Footer/Footer";
+import ContactUS from "./Contact-Us/ContactUS";
 
 export default function Routing() {
   const router = createBrowserRouter([
@@ -17,6 +18,10 @@ export default function Routing() {
     {
       path: "/about",
       element: <About /> /* or like this */,
+    },
+    {
+      path: "/contact-us",
+      element: <ContactUS /> /* or like this */,
     },
   ]);
 

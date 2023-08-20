@@ -21,6 +21,7 @@ import client11 from "../images/clients/et.jpg";
 import client12 from "../images/clients/gob pro pic mar 2023.jpg";
 import logo from "../images/Cdia logo.png";
 import "./home.css";
+import { Link } from "react-router-dom";
 export default function Home() {
   return (
     <div>
@@ -264,7 +265,10 @@ export default function Home() {
         </h1>
         <img src={logo} alt="" className="w-25" />
         Ready To Talk? DO YOU HAVE A BIG IDEA WE CAN HELP WITH?
-        <button className="btn ms-5">Contact us</button>
+        <Link to={"/contact-us"}>
+          {" "}
+          <button className="btn ms-5">Contact us</button>
+        </Link>
       </section>
     </div>
   );
