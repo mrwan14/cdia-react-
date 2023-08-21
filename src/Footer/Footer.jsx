@@ -5,7 +5,7 @@ export default function App() {
   return (
     <MDBFooter
       bgColor="black"
-      className="text-center text-lg-start text-white mt-5"
+      className="text-center text-lg-start text-white "
     >
       <section className="d-flex justify-content-center justify-content-lg-between p-4 border-bottom container">
         <div className="me-5 fw-bold fs-5 d-none d-lg-block">

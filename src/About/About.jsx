@@ -16,7 +16,7 @@ import "./about.css";
 export default function About() {
   return (
     <div className="about bg-white">
-      <div class="container my-5">
+      <div class="container ">
         <div class="row">
           <div class="col-md-6 d-flex align-items-center">
             <div>
@@ -47,7 +47,7 @@ export default function About() {
         <h2>Benfites You Get From Cdia .</h2>
         <div className="container  text-center my-5">
           <div className="row gap-5   ">
-            <Card style={{ width: "37rem" }} className="ms-5  card  ">
+            <Card style={{ width: "37rem" }} className="ms-5   card  ">
               <div className="d-flex justify-content-center mt-5">
                 <Card.Img variant="top" src={contract} className="w-50 " />
               </div>
@@ -62,7 +62,7 @@ export default function About() {
                 </Card.Text>
               </Card.Body>
             </Card>
-            <Card style={{ width: "37rem" }} className="ms-5  card  ">
+            <Card style={{ width: "37rem" }} className="ms-5   card  ">
               <div className="d-flex justify-content-center mt-5">
                 <Card.Img variant="top" src={exclusive} className="w-50 " />
               </div>
@@ -76,7 +76,7 @@ export default function About() {
                 </Card.Text>
               </Card.Body>
             </Card>
-            <Card style={{ width: "37rem" }} className="ms-5  card  ">
+            <Card style={{ width: "37rem" }} className="ms-5   card  ">
               <div className="d-flex justify-content-center mt-5">
                 <Card.Img variant="top" src={Flexable} className="w-50 " />
               </div>
@@ -90,7 +90,7 @@ export default function About() {
                 </Card.Text>
               </Card.Body>
             </Card>
-            <Card style={{ width: "37rem" }} className="ms-5  card  ">
+            <Card style={{ width: "37rem" }} className="ms-5   card  ">
               <div className="d-flex justify-content-center mt-5">
                 <Card.Img variant="top" src={Graphic} className="w-50 " />
               </div>
@@ -105,7 +105,7 @@ export default function About() {
                 </Card.Text>
               </Card.Body>
             </Card>
-            <Card style={{ width: "37rem" }} className="ms-5  card  ">
+            <Card style={{ width: "37rem" }} className="ms-5   card  ">
               <div className="d-flex justify-content-center mt-5">
                 <Card.Img variant="top" src={FreeHousting} className="w-50 " />
               </div>
@@ -120,7 +120,7 @@ export default function About() {
                 </Card.Text>
               </Card.Body>
             </Card>
-            <Card style={{ width: "37rem" }} className="ms-5  card  ">
+            <Card style={{ width: "37rem" }} className="ms-5   card  ">
               <div className="d-flex justify-content-center mt-5">
                 <Card.Img variant="top" src={FreeSll} className="w-50 " />
               </div>
@@ -133,7 +133,7 @@ export default function About() {
                 </Card.Text>
               </Card.Body>
             </Card>
-            <Card style={{ width: "37rem" }} className="ms-5  card  ">
+            <Card style={{ width: "37rem" }} className="ms-5   card  ">
               <div className="d-flex justify-content-center mt-5">
                 <Card.Img variant="top" src={MobileApps} className="w-50 " />
               </div>
@@ -148,7 +148,7 @@ export default function About() {
                 </Card.Text>
               </Card.Body>
             </Card>
-            <Card style={{ width: "37rem" }} className="ms-5  card  ">
+            <Card style={{ width: "37rem" }} className="ms-5   card  ">
               <div className="d-flex justify-content-center mt-5">
                 <Card.Img variant="top" src={Phetography} className="w-50 " />
               </div>
@@ -163,7 +163,7 @@ export default function About() {
                 </Card.Text>
               </Card.Body>
             </Card>
-            <Card style={{ width: "37rem" }} className="ms-5  card   ">
+            <Card style={{ width: "37rem" }} className="ms-5   card   ">
               <div className="d-flex justify-content-center mt-5">
                 <Card.Img variant="top" src={Performane} className="w-50 " />
               </div>
