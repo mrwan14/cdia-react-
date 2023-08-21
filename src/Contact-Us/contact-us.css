@@ -47,9 +47,6 @@ section {
 
 .heading span {
   color: var(--main-color);
-  border-radius: 0.5rem;
-  background: var(--bg);
-  padding: 0 1.5rem;
 }
 
 .contact .btn {

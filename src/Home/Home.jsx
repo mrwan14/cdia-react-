@@ -29,7 +29,7 @@ export default function Home() {
       <div className="">
         <div className="vision container my-5 ">
           <div className="row    ">
-            <div className="col-md-5 text-center bg-white rounded-5  my-3">
+            <div className="col-md-5 text-center bg-black text-white rounded-5  my-3">
               <div className="d-flex justify-content-center ">
                 <div className="img-container ">
                   {" "}
@@ -40,13 +40,13 @@ export default function Home() {
               <div className="vision-desc">
                 <ReadMoreReact
                   text="
-              At [Cdia], our vision is to become a global leader in technology and marketing, revolutionizing how businesses succeed. We aim to blend innovative software solutions with creative marketing strategies to set new standards of excellence. By using the latest technologies like AI and IoT, we want to create game-changing solutions that benefit industries worldwide.
+              At Cdia, our vision is to become a global leader in technology and marketing, revolutionizing how businesses succeed. We aim to blend innovative software solutions with creative marketing strategies to set new standards of excellence. By using the latest technologies like AI and IoT, we want to create game-changing solutions that benefit industries worldwide.
               
               We're driven to reshape marketing, making it more engaging and data-driven. Our goal is to help businesses connect better with their customers by predicting trends and using imaginative approaches. We see ourselves as agents of positive change, contributing to communities around the world through technology and marketing.
               
               Collaboration is key to our vision. We want to bring together partners, clients, and experts to co-create amazing products and strategies. Upholding strong ethics is central to who we are. We're dedicated to being an example of integrity, encouraging ethical practices in the tech and marketing sectors.
               
-              We're passionate about our employees' growth and creativity. Our workplace will be a hub of innovation, attracting the best talents who can thrive and contribute to our vision. Ultimately, at [Cdia], our vision is to shape a future where technology and marketing work hand in hand, driving businesses to unprecedented success and leaving a lasting impact on the world.
+              We're passionate about our employees' growth and creativity. Our workplace will be a hub of innovation, attracting the best talents who can thrive and contribute to our vision. Ultimately, at Cdia, our vision is to shape a future where technology and marketing work hand in hand, driving businesses to unprecedented success and leaving a lasting impact on the world.
               "
                   min={200}
                   ideal={400}
@@ -55,7 +55,7 @@ export default function Home() {
                 />
               </div>
             </div>
-            <div className="col-md-5 offset-lg-2 text-center bg-white rounded-5 my-3">
+            <div className="col-md-5 offset-lg-2 text-center bg-black text-white rounded-5 my-3">
               <div className="d-flex justify-content-center ">
                 <div className="img-container ">
                   {" "}
@@ -66,13 +66,13 @@ export default function Home() {
               <div className="vision-desc">
                 <ReadMoreReact
                   text="
-              At [Cdia], our vision is to become a global leader in technology and marketing, revolutionizing how businesses succeed. We aim to blend innovative software solutions with creative marketing strategies to set new standards of excellence. By using the latest technologies like AI and IoT, we want to create game-changing solutions that benefit industries worldwide.
+              At Cdia, our vision is to become a global leader in technology and marketing, revolutionizing how businesses succeed. We aim to blend innovative software solutions with creative marketing strategies to set new standards of excellence. By using the latest technologies like AI and IoT, we want to create game-changing solutions that benefit industries worldwide.
               
               We're driven to reshape marketing, making it more engaging and data-driven. Our goal is to help businesses connect better with their customers by predicting trends and using imaginative approaches. We see ourselves as agents of positive change, contributing to communities around the world through technology and marketing.
               
               Collaboration is key to our vision. We want to bring together partners, clients, and experts to co-create amazing products and strategies. Upholding strong ethics is central to who we are. We're dedicated to being an example of integrity, encouraging ethical practices in the tech and marketing sectors.
               
-              We're passionate about our employees' growth and creativity. Our workplace will be a hub of innovation, attracting the best talents who can thrive and contribute to our vision. Ultimately, at [Cdia], our vision is to shape a future where technology and marketing work hand in hand, driving businesses to unprecedented success and leaving a lasting impact on the world.
+              We're passionate about our employees' growth and creativity. Our workplace will be a hub of innovation, attracting the best talents who can thrive and contribute to our vision. Ultimately, at Cdia, our vision is to shape a future where technology and marketing work hand in hand, driving businesses to unprecedented success and leaving a lasting impact on the world.
               "
                   min={200}
                   ideal={400}

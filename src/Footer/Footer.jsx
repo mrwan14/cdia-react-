@@ -4,8 +4,8 @@ import { MDBFooter, MDBIcon } from "mdb-react-ui-kit";
 export default function App() {
   return (
     <MDBFooter
-      bgColor="light"
-      className="text-center text-lg-start text-black mt-5"
+      bgColor="black"
+      className="text-center text-lg-start text-white mt-5"
     >
       <section className="d-flex justify-content-center justify-content-lg-between p-4 border-bottom container">
         <div className="me-5 fw-bold fs-5 d-none d-lg-block">
