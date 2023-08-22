@@ -295,9 +295,6 @@ ul {
     grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
     gap: 1.5rem;
   }
-  .about img {
-    display: none;
-  }
 
   .about h4 {
     font-size: 12px;

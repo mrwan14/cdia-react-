@@ -29,7 +29,7 @@ export default function Home() {
       <div className="">
         <div className="vision container my-5 ">
           <div className="row    ">
-            <div className="col-md-5 text-center bg-black text-white rounded-5  my-3">
+            <div className="col-md-5  text-center bg-black text-white rounded-5  my-3">
               <div className="d-flex justify-content-center ">
                 <div className="img-container ">
                   {" "}
@@ -91,8 +91,91 @@ export default function Home() {
           <h1 className="heading text-white">
             our <span>services</span>
           </h1>
+          <div className="box-container">
+            {" "}
+            <div className="row">
+              <div className="col-md-6 col-lg-4  col-sm-12">
+                {" "}
+                <div className="box  ms-5">
+                  <div class="flip-card-inner">
+                    <div class="flip-card-front  ">
+                      <div className="my-5">
+                        <img src={mediaProduction} alt="Avatar" />
+                        <h1> MEDIA</h1>
+                        <h3 className="text-white">Production</h3>
+                      </div>
+                    </div>
+                    <div class="flip-card-back d-flex  align-items-center">
+                      <div>
+                        <h1 className="">Media Production</h1>
+                        <p className="lead  fw-bold">
+                          We Design All Kinds Of Websites For Our Clients - From
+                          Landing Pages To Online Stores
+                        </p>
+                        <a href="mobileWorks.html" className="btn">
+                          learn more
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="col-md-6 col-lg-4  col-sm-12">
+                {" "}
+                <div className="box  ms-5">
+                  <div class="flip-card-inner">
+                    <div class="flip-card-front  ">
+                      <div className="my-5">
+                        <img src={mediaProduction} alt="Avatar" />
+                        <h1> MEDIA</h1>
+                        <h3 className="text-white">Production</h3>
+                      </div>
+                    </div>
+                    <div class="flip-card-back d-flex  align-items-center">
+                      <div>
+                        <h1 className="">Media Production</h1>
+                        <p className="lead  fw-bold">
+                          We Design All Kinds Of Websites For Our Clients - From
+                          Landing Pages To Online Stores
+                        </p>
+                        <a href="mobileWorks.html" className="btn">
+                          learn more
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="col-md-6 col-lg-4  col-sm-12">
+                {" "}
+                <div className="box  ms-5">
+                  <div class="flip-card-inner">
+                    <div class="flip-card-front  ">
+                      <div className="my-5">
+                        <img src={mediaProduction} alt="Avatar" />
+                        <h1> MEDIA</h1>
+                        <h3 className="text-white">Production</h3>
+                      </div>
+                    </div>
+                    <div class="flip-card-back d-flex  align-items-center">
+                      <div>
+                        <h1 className="">Media Production</h1>
+                        <p className="lead  fw-bold">
+                          We Design All Kinds Of Websites For Our Clients - From
+                          Landing Pages To Online Stores
+                        </p>
+                        <a href="mobileWorks.html" className="btn">
+                          learn more
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
 
-          <div className="box-container ">
+          {/* <div className="box-container ">
             <div className="box  ms-5">
               <div class="flip-card-inner">
                 <div class="flip-card-front  ">
@@ -163,7 +246,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
         </section>
       </div>
       <section className="my-5 our-clients">

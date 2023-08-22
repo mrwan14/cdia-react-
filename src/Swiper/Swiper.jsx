@@ -68,12 +68,6 @@ const Swiper = () => {
               <>
                 <h1>SOFTWARE DEVELOPMENT</h1>
                 <p>Websites - Mobile Apps - E-commerce</p>
-                <div className="wrapper">
-                  <a className="cta" href="# ">
-                    <span>Let's Go</span>
-                    <span> </span>
-                  </a>
-                </div>
               </>
             )}
             {index === 2 && (
