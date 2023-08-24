@@ -1,118 +1,117 @@
-import React, { useState } from "react";
+import Button from "react-bootstrap/Button";
+import Col from "react-bootstrap/Col";
+import Form from "react-bootstrap/Form";
+import Row from "react-bootstrap/Row";
 import "./contact-us.css";
+import Contact_us from "../images/contact-us.jpg";
+import { FaLocationArrow } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
+import { BsTelephoneFill } from "react-icons/bs";
+import Map from "../Map/Map";
 
 export default function ContactUS() {
-  const [name, setName] = useState("Laurence Svekis");
-  const [email, setEmail] = useState("gapp*****@gmail.com");
-  const [message, setMessage] = useState("Hello World");
-  const [errorMessage, setErrorMessage] = useState("");
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-
-    let errorMessage = "";
-
-    if (name.length < 3) {
-      errorMessage += "<br>Name needs to be 3 characters";
-    }
-
-    if (email.length < 5) {
-      errorMessage += "<br>Email is missing";
-    }
-
-    if (errorMessage) {
-      setErrorMessage(errorMessage);
-      setTimeout(() => {
-        setErrorMessage("");
-      }, 5000);
-    } else {
-      const mailOptions = {
-        from: "test@yourdomain.com",
-        to: "marwanabdelwahab9@gmail.com",
-        replyTo: "jason@yourdomain.com",
-        subject: message,
-        html: "Mail of test sendmail",
-      };
-    }
+  const location = {
+    address: "Heliopolis, Al Matar, El Nozha, Cairo Governorate",
+    lat: 30.116466332255225,
+    lng: 31.345222991572953,
   };
   return (
-    <div className="bg-white">
-      <section class="contact" id="contact">
-        <h1 class="heading">
-          <span>Contact</span> Us
-        </h1>
+    <div className="contact-us">
+      <div className="contact-img-container">
+        <img src={Contact_us} alt="" />
+      </div>
+      <div className=" container">
+        <div className="row ">
+          <div className="col-md-6 text-white">
+            <h4 className="main-color fas fa-italic ">send us Email</h4>
+            <h1 className="fw-bolder mb-4 form-heading">
+              Feel <span className="main-color">free</span> to write
+            </h1>
+            <Form>
+              <Row className="mb-3">
+                <Form.Group as={Col} controlId="Form_Name">
+                  <Form.Control type="text" placeholder="Your Name" />
+                </Form.Group>
 
-        <div class="contact-holder">
-          <div class="icons-container">
-            <div class="icons">
-              <i class="fas fa-phone"></i>
-              <h3>our number</h3>
-              <p>+20-106-836-3041</p>
-            </div>
-            <div class="icons">
-              <a
-                href="mailto:marwanabdelwahab9@gmail.com"
-                class="text-decoration-none"
-              >
-                <i class="fas fa-envelope"></i>
-                <h3>our email</h3>
-                <p>Eagle.markting1@gmail.com</p>
-              </a>
-            </div>
-            <div class="icons">
-              <a
-                target="_blank"
-                class="text-decoration-none"
-                href="https://www.google.com/maps/place/Heliopolis,+Al+Matar,+El+Nozha,+Cairo+Governorate+4470351/@30.1123141,31.333551,15z/data=!4m15!1m8!3m7!1s0x145815dcc3e4e599:0x6c67c22e4aa39206!2sHeliopolis,+Al+Matar,+El+Nozha,+Cairo+Governorate+4470351!3b1!8m2!3d30.112315!4d31.3438507!16zL20vMGM1cTA3!3m5!1s0x145815dcc3e4e599:0x6c67c22e4aa39206!8m2!3d30.112315!4d31.3438507!16zL20vMGM1cTA3?entry=ttu"
-              >
-                <i class="fas fa-map-marker-alt"></i>
-                <h3>our location</h3>
-                <p>
-                  Neighborhood 11, District 18, Umraniye, Building 66, first
-                  floor, first apartment on the right, next to Al-Shuhada Mosque
-                </p>
-              </a>
-            </div>
+                <Form.Group as={Col} controlId="Form_Phone">
+                  <Form.Control type="number" placeholder="Phone" />
+                </Form.Group>
+              </Row>
+
+              <Row className="mb-3">
+                <Form.Group as={Col} controlId="Form_Email">
+                  <Form.Control type="email" placeholder="Enter email" />
+                </Form.Group>
+                <Form.Group as={Col} controlId="Form_Subject">
+                  <Form.Control type="text" placeholder="Subject" />
+                </Form.Group>
+              </Row>
+              <Row>
+                <Form.Group className="mb-3" controlId="Form_message">
+                  <Form.Control
+                    as="textarea"
+                    rows={3}
+                    placeholder="Your Message"
+                  />
+                </Form.Group>
+              </Row>
+
+              <Button variant="primary" type="submit">
+                Send Message
+              </Button>
+            </Form>
           </div>
-
-          <div class="row">
-            <form action="" id="myform" onSubmit={handleSubmit}>
-              {errorMessage && (
-                <div
-                  style={{ color: "red" }}
-                  dangerouslySetInnerHTML={{ __html: errorMessage }}
-                ></div>
-              )}
-              <input
-                id="name"
-                type="text"
-                class="box"
-                value={name}
-                onChange={(e) => setName(e.target.value)}
-              />
-              <input
-                id="email"
-                type="email"
-                class="box"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-              />
-              <textarea
-                id="message"
-                name=""
-                class="box"
-                cols="30"
-                rows="10"
-                value={message}
-                onChange={(e) => setMessage(e.target.value)}
-              ></textarea>
-              <button type="submit" class="btn">
-                send
-              </button>
-            </form>
+          <div className="col-md-5 offset-1 text-white">
+            <h4 className="main-color fas fa-italic ">NEED ANY HELP?</h4>
+            <h1 className="fw-bolder mb-4 form-heading">
+              Get in <span className="main-color">touch</span> with us{" "}
+            </h1>
+            <div className="d-flex">
+              <div className="icon-container">
+                <FaLocationArrow className="fs-2 text-black" />
+              </div>{" "}
+              <div className="ms-4">
+                {" "}
+                <h2 className="fw-bolder">Our Address</h2>
+                <h4 className="lead">
+                  Heliopolis, Al Matar, El Nozha, Cairo Governorate
+                </h4>
+              </div>{" "}
+            </div>
+            <a href="mailto:">
+              <div className="d-flex my-5">
+                <div className="icon-container">
+                  <MdEmail className="fs-1 text-black" />
+                </div>{" "}
+                <div className="ms-4">
+                  {" "}
+                  <h2 className="fw-bolder">Email address</h2>
+                  <h4 className="lead">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Aspernatur, ad!
+                  </h4>
+                </div>{" "}
+              </div>
+            </a>
+            <a href="tel:+20 106 033 3343">
+              {" "}
+              <div className="d-flex">
+                <div className="icon-container">
+                  <BsTelephoneFill className="fs-2 text-black" />
+                </div>{" "}
+                <div className="ms-4">
+                  {" "}
+                  <h2 className="fw-bolder">Call now</h2>
+                  <h4 className="lead">+20 106 033 3343</h4>
+                </div>{" "}
+              </div>
+            </a>
           </div>
         </div>
-      </section>
+      </div>
+      <div className="map">
+        <Map location={location} zoomLevel={17} /> {/* include it here */}
+      </div>
     </div>
   );
 }

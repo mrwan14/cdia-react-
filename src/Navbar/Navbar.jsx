@@ -39,15 +39,15 @@ export default function Navigationbar() {
               </Offcanvas.Header>
               <Offcanvas.Body>
                 <Nav className="justify-content-end flex-grow-1 pe-3   ">
-                  <Nav.Link className="text-warning fs-3 mt-3" href="/">
+                  <Nav.Link className="ul-text-color fs-2 mt-3" href="/">
                     Home
                   </Nav.Link>
-                  <Nav.Link className="text-warning fs-3 mt-3" href="/about">
+                  <Nav.Link className="ul-text-color fs-2 mt-3" href="/about">
                     About
                   </Nav.Link>
                   <NavDropdown
                     title={
-                      <span className="text-warning fs-3  ">Services</span>
+                      <span className="ul-text-color fs-2  ">Services</span>
                     }
                     id={` offcanvasNavbarDropdown-expand-${expand}`}
                     className="mt-3 "
@@ -61,6 +61,9 @@ export default function Navigationbar() {
                       Something else here
                     </NavDropdown.Item>
                   </NavDropdown>
+                  <Nav.Link className="ul-text-color fs-2 mt-3" href="/contact-us">
+                    Cotact us
+                  </Nav.Link>
                 </Nav>
               </Offcanvas.Body>
             </Navbar.Offcanvas>

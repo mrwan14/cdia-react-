@@ -16,7 +16,7 @@ import "./about.css";
 export default function About() {
   return (
     <div className="about bg-white ">
-      <div class="container  ">
+      <div class="container  p-5 ">
         <div class="row ">
           <div class="col-md-6 d-flex align-items-center mt-5">
             <div>

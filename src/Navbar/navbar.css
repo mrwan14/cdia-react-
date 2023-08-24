@@ -1,3 +1,9 @@
 .logo {
   width: 10%;
 }
+.ul-text-color {
+  color: #ffffff;
+}
+.ul-text-color:hover {
+  color: #ffd800;
+}
