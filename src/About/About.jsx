@@ -15,7 +15,7 @@ import Performane from "../images/Performance Guarantees.png";
 import "./about.css";
 export default function About() {
   return (
-    <div className="about bg-white ">
+    <div className="about text-white ">
       <div class="container  p-5 ">
         <div class="row ">
           <div class="col-md-6 d-flex align-items-center mt-5">
