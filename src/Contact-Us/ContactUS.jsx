@@ -7,9 +7,57 @@ import Contact_us from "../images/contact-us.jpg";
 import { FaLocationArrow } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { BsTelephoneFill } from "react-icons/bs";
+import emailjs from "@emailjs/browser";
+
 import Map from "../Map/Map";
+import { useRef, useState } from "react";
 
 export default function ContactUS() {
+  const [formData, setFormData] = useState({
+    name: "",
+    phone: "",
+    email: "",
+    subject: "",
+    message: "",
+  });
+  const { name, phone, email, subject, message } = formData;
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prevFormData) => ({
+      ...prevFormData,
+      [name]: value,
+    }));
+  };
+  const service_id = "service_zhfahan";
+  const templete_id = "template_bdmmbxl";
+  const public_key = "Sv62UuKwYWTNwt7-P";
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    // Perform form submission logic here
+
+    // Send the form data using EmailJS
+    emailjs
+      .sendForm(service_id, templete_id, e.target, public_key)
+      .then((response) => {
+        console.log(e.target);
+
+        console.log("Email sent successfully!", response.text);
+      })
+      .catch((error) => {
+        console.error("Error sending email:", error);
+      });
+
+    // Reset form fields
+    setFormData({
+      name: "",
+      phone: "",
+      email: "",
+      subject: "",
+      message: "",
+    });
+  };
   const location = {
     address: "Heliopolis, Al Matar, El Nozha, Cairo Governorate",
     lat: 30.116466332255225,
@@ -27,31 +75,58 @@ export default function ContactUS() {
             <h1 className="fw-bolder mb-4 form-heading">
               Feel <span className="main-color">free</span> to write
             </h1>
-            <Form>
+            <Form onSubmit={handleSubmit} id="myForm">
               <Row className="mb-3">
-                <Form.Group as={Col} controlId="Form_Name">
-                  <Form.Control type="text" placeholder="Your Name" />
+                <Form.Group as={Col}>
+                  <Form.Control
+                    type="text"
+                    placeholder="Your Name"
+                    name="name"
+                    value={name}
+                    onChange={handleChange}
+                  />
                 </Form.Group>
 
-                <Form.Group as={Col} controlId="Form_Phone">
-                  <Form.Control type="number" placeholder="Phone" />
+                <Form.Group as={Col}>
+                  <Form.Control
+                    placeholder="Phone"
+                    type="text"
+                    name="phone"
+                    value={phone}
+                    onChange={handleChange}
+                  />
                 </Form.Group>
               </Row>
 
               <Row className="mb-3">
-                <Form.Group as={Col} controlId="Form_Email">
-                  <Form.Control type="email" placeholder="Enter email" />
+                <Form.Group as={Col}>
+                  <Form.Control
+                    type="email"
+                    placeholder="Enter email"
+                    name="email"
+                    value={email}
+                    onChange={handleChange}
+                  />
                 </Form.Group>
-                <Form.Group as={Col} controlId="Form_Subject">
-                  <Form.Control type="text" placeholder="Subject" />
+                <Form.Group as={Col}>
+                  <Form.Control
+                    type="text"
+                    placeholder="Subject"
+                    name="subject"
+                    value={subject}
+                    onChange={handleChange}
+                  />
                 </Form.Group>
               </Row>
               <Row>
-                <Form.Group className="mb-3" controlId="Form_message">
+                <Form.Group className="mb-3">
                   <Form.Control
                     as="textarea"
                     rows={3}
                     placeholder="Your Message"
+                    name="message"
+                    value={message}
+                    onChange={handleChange}
                   />
                 </Form.Group>
               </Row>
