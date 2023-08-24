@@ -15,7 +15,7 @@
 
 @media (max-width: 1190px) {
   .card {
-    width: 35rem;
+    width: 30rem;
   }
 }
 
@@ -24,7 +24,7 @@
     font-size: 55%;
   }
   .card {
-    width: 35rem;
+    width: 25rem;
   }
 
 }
@@ -40,6 +40,6 @@
     font-size: 50%;
   }
   .card {
-    width: 20rem;
+    width: 15rem;
   }
 }
