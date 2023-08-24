@@ -13,28 +13,27 @@ export default function Navigationbar() {
   return (
     <div>
       {["lg"].map((expand) => (
-        <Navbar
-          key={expand}
-          sticky="top"
-          expand={expand}
-          className="bg-black   "
-        >
+        <Navbar key={expand} sticky="top" expand={expand} className="bg-black">
           <Container>
             <Navbar.Brand href="/" className="logo">
               <img src={logo} alt="" className="w-100" />
             </Navbar.Brand>
             <Navbar.Toggle
               aria-controls={`offcanvasNavbar-expand-${expand} `}
-              className=" bg-warning"
+              className=" bg-warning "
             />
             <Navbar.Offcanvas
               id={`offcanvasNavbar-expand-${expand}`}
               aria-labelledby={`offcanvasNavbarLabel-expand-${expand}`}
               placement="end"
+              className=" bg-black"
             >
               <Offcanvas.Header closeButton>
-                <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand} `}>
-                  Cdia
+                <Offcanvas.Title
+                  id={`offcanvasNavbarLabel-expand-${expand}  `}
+                  className=" text-white"
+                >
+                  <h3>Cdia</h3>
                 </Offcanvas.Title>
               </Offcanvas.Header>
               <Offcanvas.Body>
@@ -61,7 +60,10 @@ export default function Navigationbar() {
                       Something else here
                     </NavDropdown.Item>
                   </NavDropdown>
-                  <Nav.Link className="ul-text-color fs-2 mt-3" href="/contact-us">
+                  <Nav.Link
+                    className="ul-text-color fs-2 mt-3"
+                    href="/contact-us"
+                  >
                     Cotact us
                   </Nav.Link>
                 </Nav>
