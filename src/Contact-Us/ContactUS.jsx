@@ -61,7 +61,7 @@ export default function ContactUS() {
               </Button>
             </Form>
           </div>
-          <div className="col-md-5 offset-1 text-white">
+          <div className="col-md-5 offset-md-1 text-white">
             <h4 className="main-color fas fa-italic ">NEED ANY HELP?</h4>
             <h1 className="fw-bolder mb-4 form-heading">
               Get in <span className="main-color">touch</span> with us{" "}
