@@ -68,9 +68,9 @@ export default function ContactUS() {
       <div className="contact-img-container">
         <img src={Contact_us} alt="" />
       </div>
-      <div className=" container">
+      <div className=" container p-5">
         <div className="row ">
-          <div className="col-md-6 text-white">
+          <div className="col-md-6 text-white ">
             <h4 className="main-color fas fa-italic ">send us Email</h4>
             <h1 className="fw-bolder mb-4 form-heading">
               Feel <span className="main-color">free</span> to write
