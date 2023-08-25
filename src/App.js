@@ -9,6 +9,7 @@ import Navigationbar from "./Navbar/Navbar";
 import Footer from "./Footer/Footer";
 import ContactUS from "./Contact-Us/ContactUS";
 import Routing from "./Routing";
+import PageNotFound from "./PageNotFound/PageNotFound";
 
 function App() {
   const router = createBrowserRouter([
@@ -30,6 +31,7 @@ function App() {
           element: <ContactUS /> /* or like this */,
         },
       ],
+      errorElement: <PageNotFound />,
     },
   ]);
   return <RouterProvider router={router} />;

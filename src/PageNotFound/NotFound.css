@@ -1,0 +1,19 @@
+.not-found-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+.not-found-heading {
+  font-size: 10rem;
+  color: #ffd800;
+  margin-bottom: 1rem;
+}
+
+.not-found-text {
+  font-size: 6rem;
+  color: #ffffff;
+}
