@@ -55,7 +55,7 @@ html {
   font-weight: 600;
   cursor: pointer;
   color: white;
-  background-color: #2a2b2c;
+  background-color: #111214;
   /* background: linear-gradient(
     99deg,
     rgba(249, 249, 249, 0.5) 0%,
@@ -82,7 +82,7 @@ html {
 
 .btn:hover {
   background-color: rgba(255, 216, 0, 0.5) 0%;
-  color: #000;
+  color: #111214;
 }
 
 .btn:hover::before {

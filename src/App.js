@@ -10,6 +10,9 @@ import Footer from "./Footer/Footer";
 import ContactUS from "./Contact-Us/ContactUS";
 import Routing from "./Routing";
 import PageNotFound from "./PageNotFound/PageNotFound";
+import DigitalMarketing from "./Services/DigitalMarketing/DigitalMarketing";
+import Websites from "./Services/Websites/Websites";
+import MobileApps from "./Services/MobileApps/MobileApps";
 
 function App() {
   const router = createBrowserRouter([
@@ -23,6 +26,10 @@ function App() {
           element: <Home />,
         },
         {
+          path: "*",
+          element: <PageNotFound /> /* or like this */,
+        },
+        {
           path: "/about",
           element: <About /> /* or like this */,
         },
@@ -30,8 +37,20 @@ function App() {
           path: "/contact-us",
           element: <ContactUS /> /* or like this */,
         },
+        {
+          path: "/digital-marketing",
+          element: <DigitalMarketing /> /* or like this */,
+        },
+        {
+          path: "/websites",
+          element: <Websites /> /* or like this */,
+        },
+        {
+          path: "/mobile-apps",
+          element: <MobileApps /> /* or like this */,
+        },
       ],
-      errorElement: <PageNotFound />,
+      // errorElement: <PageNotFound />,
     },
   ]);
   return <RouterProvider router={router} />;

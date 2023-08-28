@@ -1,11 +1,10 @@
 import React from "react";
-import Button from "react-bootstrap/Button";
 import Container from "react-bootstrap/Container";
-import Form from "react-bootstrap/Form";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import Offcanvas from "react-bootstrap/Offcanvas";
+import { IoMdArrowDropdown } from "react-icons/io";
 
 import logo from "../images/Cdia logo.png";
 import "./navbar.css";
@@ -45,19 +44,23 @@ export default function Navigationbar() {
                     About
                   </Nav.Link>
                   <NavDropdown
+                    renderMenuOnMount={true}
                     title={
-                      <span className="ul-text-color fs-2  ">Services</span>
+                      <span className="ul-text-color fs-2  ">
+                        Services <IoMdArrowDropdown className="fs-1 ms-0" />
+                      </span>
                     }
                     id={` offcanvasNavbarDropdown-expand-${expand}`}
-                    className="mt-3 "
+                    className="mt-3   "
                   >
-                    <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
-                    <NavDropdown.Item href="#action4">
-                      Another action
+                    <NavDropdown.Item href="/digital-marketing">
+                      Digital Marketing
                     </NavDropdown.Item>
-                    <NavDropdown.Divider className="bg-warning" />
-                    <NavDropdown.Item href="#action5">
-                      Something else here
+                    <NavDropdown.Item href="/websites">
+                      Websites
+                    </NavDropdown.Item>
+                    <NavDropdown.Item href="/mobile-apps">
+                      Mobile apps
                     </NavDropdown.Item>
                   </NavDropdown>
                   <Nav.Link

@@ -7,3 +7,21 @@
 .ul-text-color:hover {
   color: #ffd800;
 }
+div.dropdown-menu.show {
+  width: auto;
+  height: auto;
+}
+a.dropdown-item {
+  font-size: 15px;
+  color: #000000;
+}
+a.dropdown-item:hover {
+  font-size: 18px;
+  color: #ffd800;
+}
+.dropdown:hover > .dropdown-menu {
+  display: block;
+}
+.dropdown-toggle::after {
+  display: none;
+}

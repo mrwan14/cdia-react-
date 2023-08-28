@@ -1,0 +1,71 @@
+.digital-marketing {
+  color: white;
+}
+.for-margin {
+  margin-top: 150px;
+}
+.for-right-margin {
+  margin-top: 100px;
+}
+.border {
+  width: 80%;
+  margin: auto;
+
+  opacity: 0.5;
+}
+.for-heading-margin {
+  margin-left: 120px;
+}
+.img-service-container {
+  border: 0;
+}
+.form-service-container {
+  width: 80%;
+}
+.service-container {
+  width: 95%;
+  border: 0.1px rgb(132, 128, 128) solid;
+  background-color: black;
+}
+.service-container:hover {
+  box-shadow: 0 0 1px 1px white;
+  transform: scale(1.01);
+}
+.btn-Portfolio {
+  background-color: #ffd800;
+  color: #111214;
+}
+.btn-Portfolio {
+}
+@media (max-width: 1190px) {
+  .for-heading-margin {
+    margin-left: 100px;
+  }
+}
+
+@media (max-width: 991px) {
+  .for-heading-margin {
+    margin-left: 70px;
+  }
+  html {
+    font-size: 70%;
+  }
+}
+
+@media (max-width: 768px) {
+  .for-heading-margin {
+    margin-left: 40px;
+  }
+  html {
+    font-size: 55%;
+  }
+}
+
+@media (max-width: 450px) {
+  .for-heading-margin {
+    margin-left: 0;
+  }
+  html {
+    font-size: 50%;
+  }
+}

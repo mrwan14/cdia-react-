@@ -1,6 +1,5 @@
 import React from "react";
 import Cdiaabout from "../images/cdia-about-us.png";
-import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import contract from "../images/icons/Contract for Granted Rights 2.png";
 import exclusive from "../images/icons/Exclusive Discounts 2.png";
@@ -24,30 +23,22 @@ export default function About() {
   return (
     <div className="about text-white ">
       <div class="container  p-5 ">
-        <div class="row ">
-          <div class="col-md-6 d-flex align-items-center ">
+        <div class="  text-center   roll-in-left">
+          <img src={Cdiaabout} alt="" class="w-50" />
+        </div>
+        <div className="row">
+          <div className=" col-md-6 p-5">
             <div>
-              <h1 className="about-heading">About Us - Cdia</h1>
+              <h1 className="about-heading primart-heading">About Us - Cdia</h1>
               <h4 className="about-descriptoin">
                 Welcome to Cdia, where innovation meets transformation. As a
                 pioneering software and marketing company, we're dedicated to
                 propelling businesses into the digital future with ingenious
                 solutions and impactful strategies.
               </h4>
-
-              <h3 class="bg-warning text-white my-5 w-25 p-2">
-                This Is Not All .....
-              </h3>
             </div>
-          </div>
-          <div class="col-md-6  roll-in-left">
-            <img src={Cdiaabout} alt="" class="w-100" />
-          </div>
-        </div>
-        <div className="row">
-          <div className=" col-md-6 p-5">
-            <div className="">
-              <h1>Our Story</h1>
+            <div className=" my-5">
+              <h1 className="primart-heading">Our Story</h1>
               <h4 className="our-story-description">
                 Founded 2017, Cdia emerged from a shared vision among a group of
                 tech enthusiasts and marketing mavericks. Our journey began with
@@ -55,11 +46,14 @@ export default function About() {
                 exceptional software and dynamic marketing, providing businesses
                 with a holistic approach to growth.
               </h4>
+              <h3 class="bg-warning text-white my-5 w-25 p-2">
+                This Is Not All .....
+              </h3>
             </div>
           </div>
           <dic className="col-md-6 p-5">
             <div className="">
-              <h1>Why Choose Cdia?</h1>
+              <h1 className="primart-heading">Why Choose Cdia?</h1>
               <h4 className="why-chooce-description">
                 Innovative Fusion: We're the catalyst for change, seamlessly
                 merging the realms of software and marketing to create
