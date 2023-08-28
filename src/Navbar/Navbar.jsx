@@ -63,6 +63,27 @@ export default function Navigationbar() {
                       Mobile apps
                     </NavDropdown.Item>
                   </NavDropdown>
+                  <NavDropdown
+                    renderMenuOnMount={true}
+                    title={
+                      <span className="ul-text-color fs-2  ">
+                        Portfolio <IoMdArrowDropdown className="fs-1 ms-0" />
+                      </span>
+                    }
+                    id={` offcanvasNavbarDropdown-expand-${expand}`}
+                    className="mt-3   "
+                  >
+                    <NavDropdown.Item href="/digital-marketing-portfolio">
+                      Digital Marketing
+                    </NavDropdown.Item>
+                    <NavDropdown.Item href="/
+                    ">
+                      Websites
+                    </NavDropdown.Item>
+                    <NavDropdown.Item href="/mobile-apps-portfolio">
+                      Mobile apps
+                    </NavDropdown.Item>
+                  </NavDropdown>
                   <Nav.Link
                     className="ul-text-color fs-2 mt-3"
                     href="/contact-us"

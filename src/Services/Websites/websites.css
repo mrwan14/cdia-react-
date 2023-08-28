@@ -1,0 +1,52 @@
+.websites {
+  color: white;
+  letter-spacing: 1px;
+  word-spacing: 3px;
+}
+.main-content {
+  margin-top: 70px;
+}
+.websites-icon {
+  font-size: 30px;
+  color: #ffd800;
+}
+.middle-style {
+  background-color: #ffd800;
+}
+.middle-style-desc {
+  color: #111214;
+  font-weight: bolder;
+}
+
+.website-carsoul-icons {
+  font-size: 100px;
+  color: #ffd800;
+  padding: 20px;
+}
+.carousel-indicators {
+  display: none;
+}
+/* .carousel-indicators li {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background-color: #ffd800;
+} */
+
+/* .carousel-indicators .active {
+  border-top: unset;
+  border-bottom: unset;
+  border: 1px solid transparent;
+  border-left-width: 0;
+  border-right-width: 0;
+  border-radius: 10px;
+  background-color: #a91d2a;
+  height: 10px;
+  width: 50px;
+} */
+
+.from-our-portfolio .btn {
+  background-color: #ffd800;
+  color: #111214;
+  margin-right: 100px;
+}

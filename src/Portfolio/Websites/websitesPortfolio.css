@@ -1,0 +1,13 @@
+.linear-bg {
+  background: #ffd800;
+  height: 300px;
+  color: #111214;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.WebsiesPortfolio {
+  color: white;
+  letter-spacing: 1px;
+  word-spacing: 3px;
+}
