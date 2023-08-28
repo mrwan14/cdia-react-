@@ -76,8 +76,10 @@ export default function Navigationbar() {
                     <NavDropdown.Item href="/digital-marketing-portfolio">
                       Digital Marketing
                     </NavDropdown.Item>
-                    <NavDropdown.Item href="/
-                    ">
+                    <NavDropdown.Item
+                      href="/websites-portfolio
+                    "
+                    >
                       Websites
                     </NavDropdown.Item>
                     <NavDropdown.Item href="/mobile-apps-portfolio">
