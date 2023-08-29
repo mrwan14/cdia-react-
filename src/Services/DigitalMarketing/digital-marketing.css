@@ -50,7 +50,6 @@
   .for-heading-margin {
     margin-left: 0;
   }
-
 }
 
 @media (max-width: 991px) {
@@ -81,12 +80,7 @@
   .for-heading-margin {
     margin-left: 0;
   }
-  /* .digital-marketing .carousel {
-    width: 300px;
-    height: 600px;
-    margin: auto;
-    overflow: hidden;
-  } */
+
   .service-container {
     width: 90%;
     margin: auto;
