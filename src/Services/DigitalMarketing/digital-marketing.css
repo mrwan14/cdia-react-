@@ -35,17 +35,34 @@
   background-color: #ffd800;
   color: #111214;
 }
-.btn-Portfolio {
+.from-our-portfolio-container {
+  padding: 4rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  width: 35rem;
 }
+
 @media (max-width: 1190px) {
   .for-heading-margin {
     margin-left: 100px;
+  }
+  .from-our-portfolio-container {
+    width: 25rem;
   }
 }
 
 @media (max-width: 991px) {
   .for-heading-margin {
     margin-left: 70px;
+  }
+  .from-our-portfolio-container {
+    width: 17rem;
+  }
+  .service-container {
+    width: 115%;
   }
   html {
     font-size: 70%;
@@ -56,6 +73,12 @@
   .for-heading-margin {
     margin-left: 40px;
   }
+  .from-our-portfolio-container {
+    width: 16rem;
+  }
+  .service-container {
+    width: 125%;
+  }
   html {
     font-size: 55%;
   }
@@ -63,7 +86,14 @@
 
 @media (max-width: 450px) {
   .for-heading-margin {
-    margin-left: 0;
+    margin-left: 40px;
+  }
+  .from-our-portfolio-container {
+    width: 14.6rem;
+    background-color: #ffd800;
+  }
+  .service-container {
+    width: 135%;
   }
   html {
     font-size: 50%;

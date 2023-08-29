@@ -23,7 +23,7 @@ export default function DigitalMarketing() {
       </h3>
       <div className=" for-margin">
         <div className="row  ">
-          <div className="col-md-5 offset-1 text-start ">
+          <div className="col-sm-5 offset-1 text-start ">
             <h1 className="my-5">Social media</h1>
             <h3 className="fw-light">
               We are talking here about right targeting, it’s not just social
@@ -31,14 +31,14 @@ export default function DigitalMarketing() {
               perfect target and get successful outputs.
             </h3>
           </div>
-          <div className="col-md-6 text-center ">
+          <div className="col-sm-6 text-center ">
             <img src={slide3} alt="" className="w-50" />
           </div>
         </div>
       </div>
       <div className=" for-margin">
         <div className="row  ">
-          <div className="col-md-5 offset-1 text-start ">
+          <div className="col-sm-5 offset-1 text-start ">
             <div>
               {" "}
               <img src={icon} alt="" className=" rounded-circle w-25" />
@@ -52,7 +52,7 @@ export default function DigitalMarketing() {
               audience.
             </h3>
           </div>
-          <div className="col-md-5  offset-1 for-right-margin text-start ">
+          <div className="col-sm-5  offset-1 for-right-margin text-start ">
             <div>
               {" "}
               <img src={icon} alt="" className=" rounded-circle w-25" />
@@ -70,7 +70,7 @@ export default function DigitalMarketing() {
       </div>
       <div className=" for-margin">
         <div className="row  ">
-          <div className="col-md-5 offset-1 text-start ">
+          <div className="col-sm-5 offset-1 text-start ">
             <div>
               {" "}
               <img src={icon} alt="" className=" rounded-circle w-25" />
@@ -84,7 +84,7 @@ export default function DigitalMarketing() {
               audience.
             </h3>
           </div>
-          <div className="col-md-5  offset-1 for-right-margin text-start ">
+          <div className="col-sm-5  offset-1 for-right-margin text-start ">
             <div>
               {" "}
               <img src={icon} alt="" className=" rounded-circle w-25" />
@@ -113,7 +113,7 @@ export default function DigitalMarketing() {
               <div className="form-service-container m-auto">
                 {" "}
                 <div className="row ">
-                  <div className="col-md-4 text-center my-5 ">
+                  <div className="from-our-portfolio-container text-center my-5 ">
                     <div className="service-container">
                       <div className="img-service-container">
                         <img src={client} className="w-100" alt="" />
@@ -138,7 +138,7 @@ export default function DigitalMarketing() {
                       </div>{" "}
                     </div>
                   </div>
-                  <div className="col-md-4 text-center my-5 ">
+                  <div className="from-our-portfolio-container text-center my-5 ">
                     <div className="service-container">
                       <div className="img-service-container">
                         <img src={client} className="w-100" alt="" />
@@ -163,7 +163,7 @@ export default function DigitalMarketing() {
                       </div>{" "}
                     </div>
                   </div>
-                  <div className="col-md-4 text-center my-5 ">
+                  <div className="from-our-portfolio-container text-center my-5 ">
                     <div className="service-container">
                       <div className="img-service-container">
                         <img src={client} className="w-100" alt="" />
@@ -198,7 +198,7 @@ export default function DigitalMarketing() {
               <div className="form-service-container m-auto">
                 {" "}
                 <div className="row ">
-                  <div className="col-md-4 text-center my-5 ">
+                  <div className="from-our-portfolio-container text-center my-5 ">
                     <div className="service-container">
                       <div className="img-service-container">
                         <img src={client} className="w-100" alt="" />
@@ -223,7 +223,7 @@ export default function DigitalMarketing() {
                       </div>{" "}
                     </div>
                   </div>
-                  <div className="col-md-4 text-center my-5 ">
+                  <div className="from-our-portfolio-container text-center my-5 ">
                     <div className="service-container">
                       <div className="img-service-container">
                         <img src={client} className="w-100" alt="" />
@@ -248,7 +248,7 @@ export default function DigitalMarketing() {
                       </div>{" "}
                     </div>
                   </div>
-                  <div className="col-md-4 text-center my-5 ">
+                  <div className="from-our-portfolio-container text-center my-5 ">
                     <div className="service-container">
                       <div className="img-service-container">
                         <img src={client} className="w-100" alt="" />
@@ -289,15 +289,15 @@ export default function DigitalMarketing() {
           <h1 className=" for-heading-margin">Other Services</h1>
         </div>
         <div className="row">
-          <div className="col-md-4 text-center my-5">
+          <div className="col-sm-4 text-center my-5">
             <img src={digitalmarketing} className="w-25" alt="" />
             <h4 className=" my-3">Digital Marketing</h4>
           </div>
-          <div className="col-md-4 text-center my-5">
+          <div className="col-sm-4 text-center my-5">
             <img src={digitalmarketing} className="w-25" alt="" />
             <h4 className=" my-3">Digital Marketing</h4>
           </div>
-          <div className="col-md-4 text-center my-5">
+          <div className="col-sm-4 text-center my-5">
             <img src={digitalmarketing} className="w-25" alt="" />
             <h4 className=" my-3">Digital Marketing</h4>
           </div>
