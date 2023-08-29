@@ -1,12 +1,31 @@
 import React from "react";
-import Carousel from "react-bootstrap/Carousel";
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
 import { FaBriefcaseMedical } from "react-icons/fa";
 import { ImStatsBars } from "react-icons/im";
 import webesite from "../../images/web-design-1.png";
 import middle from "../../images/middle-image.png";
 import "./websites.css";
 import { BsWordpress } from "react-icons/bs";
+
 export default function Websites() {
+  const responsive = {
+    desktop: {
+      breakpoint: { max: 3000, min: 1024 },
+      items: 3,
+      slidesToSlide: 3, // optional, default to 1.
+    },
+    tablet: {
+      breakpoint: { max: 1024, min: 464 },
+      items: 2,
+      slidesToSlide: 2, // optional, default to 1.
+    },
+    mobile: {
+      breakpoint: { max: 464, min: 0 },
+      items: 1,
+      slidesToSlide: 1, // optional, default to 1.
+    },
+  };
   return (
     <div className="websites">
       <div className=" container ">
@@ -39,7 +58,7 @@ export default function Websites() {
                     <BsWordpress className=" websites-icon me-3  " />
                     <h3>WordPress control panel</h3>
                   </div>
-                  <div className="d-flex justify-content-between  align-items-center">
+                  <div className="d-flex justify-content-between  my-5 align-items-center">
                     <BsWordpress className=" websites-icon me-3  " />
                     <h3>WordPress control panel</h3>
                   </div>
@@ -89,66 +108,41 @@ export default function Websites() {
           </h2>
           <section className="my-5 ">
             {" "}
-            <h1 class="heading text-white"></h1>
-            <Carousel>
-              <Carousel.Item className="   ">
-                <div className="">
-                  {" "}
-                  <div class="row w-100 ">
-                    <div class="d-flex ">
-                      <div class="col-md-3 m-auto ">
-                        <FaBriefcaseMedical className="website-carsoul-icons" />
+            <Carousel
+              swipeable={false}
+              draggable={false}
+              showDots={true}
+              responsive={responsive}
+              ssr={true} // means to render carousel on server-side.
+              infinite={true}
+              autoPlaySpeed={1000}
+              keyBoardControl={true}
+              customTransition="all .5"
+              transitionDuration={500}
+              containerClass="carousel-container"
+              removeArrowOnDeviceType={["tablet", "mobile"]}
+              dotListClass="custom-dot-list-style"
+              itemClass="carousel-item-padding-40-px"
+            >
+              <div>
+                <FaBriefcaseMedical className="website-carsoul-icons" />
 
-                        <h4 className="">Medical Fields</h4>
-                      </div>
-                      <div class="col-md-3 m-auto ">
-                        <FaBriefcaseMedical className="website-carsoul-icons" />
-
-                        <h4 className="">Medical Fields</h4>
-                      </div>
-                      <div class="col-md-3 m-auto ">
-                        <FaBriefcaseMedical className="website-carsoul-icons" />
-
-                        <h4 className="">Medical Fields</h4>
-                      </div>
-                      <div class="col-md-3 m-auto ">
-                        <FaBriefcaseMedical className="website-carsoul-icons" />
-
-                        <h4 className="">Medical Fields</h4>
-                      </div>
-                    </div>
-                  </div>{" "}
-                </div>
-              </Carousel.Item>
-              <Carousel.Item className="   ">
-                <div className="">
-                  {" "}
-                  <div class="row w-100 ">
-                    <div class="d-flex ">
-                      <div class="col-md-3 m-auto ">
-                        <FaBriefcaseMedical className="website-carsoul-icons" />
-
-                        <h4 className="">Medical Fields</h4>
-                      </div>
-                      <div class="col-md-3 m-auto ">
-                        <FaBriefcaseMedical className="website-carsoul-icons" />
-
-                        <h4 className="">Medical Fields</h4>
-                      </div>
-                      <div class="col-md-3 m-auto ">
-                        <FaBriefcaseMedical className="website-carsoul-icons" />
-
-                        <h4 className="">Medical Fields</h4>
-                      </div>
-                      <div class="col-md-3 m-auto ">
-                        <FaBriefcaseMedical className="website-carsoul-icons" />
-
-                        <h4 className="">Medical Fields</h4>
-                      </div>
-                    </div>
-                  </div>{" "}
-                </div>
-              </Carousel.Item>
+                <h4 className="">Medical Fields</h4>
+              </div>
+              <div>
+                {" "}
+                <FaBriefcaseMedical className="website-carsoul-icons" />
+                <h4 className="">Medical Fields</h4>
+              </div>
+              <div>
+                {" "}
+                <FaBriefcaseMedical className="website-carsoul-icons" />
+                <h4 className="">Medical Fields</h4>
+              </div>
+              <div>
+                <FaBriefcaseMedical className="website-carsoul-icons" />{" "}
+                <h4 className="">Medical Fields</h4>
+              </div>
             </Carousel>
           </section>
           <div className="border my-5 "></div>
@@ -158,166 +152,272 @@ export default function Websites() {
               <h1 className=" for-heading-margin ">From Our Portfolio</h1>
               <button className="btn fs-3">Show More </button>
             </div>
-            <Carousel>
-              <Carousel.Item className="my-5    ">
-                <div className="d-flex justify-content-center">
-                  {" "}
-                  <div className="form-service-container m-auto">
+            <Carousel
+              swipeable={false}
+              draggable={false}
+              showDots={true}
+              responsive={responsive}
+              ssr={true} // means to render carousel on server-side.
+              infinite={true}
+              autoPlaySpeed={1000}
+              keyBoardControl={true}
+              customTransition="all .5"
+              transitionDuration={500}
+              containerClass="carousel-container"
+              removeArrowOnDeviceType={["tablet", "mobile"]}
+              dotListClass="custom-dot-list-style"
+              itemClass="carousel-item-padding-40-px"
+            >
+              <div>
+                {" "}
+                <div className="service-container">
+                  <div className="img-service-container">
+                    <img src={middle} className="w-100" alt="" />
+                  </div>{" "}
+                  <div>
                     {" "}
-                    <div className="row ">
-                      <div className="col-md-4 text-center my-5 ">
-                        <div className="service-container">
-                          <div className="img-service-container">
-                            <img src={middle} className="w-100" alt="" />
-                          </div>{" "}
-                          <div>
-                            {" "}
-                            <h4 className="text-warning my-3"> </h4>
-                            <h2 className="text-warning my-5">
-                              Armada Restraunt{" "}
-                            </h2>
-                            <div className=" d-flex justify-content-between align-items-center">
-                              {" "}
-                              <h5 className="text-start m-5  ">Web Design</h5>
-                              <div className="d-flex  m-5 justify-content-around align-items-end ">
-                                {" "}
-                                <ImStatsBars className=" fs-1 me-2" />
-                                <h5>123</h5>
-                              </div>{" "}
-                            </div>
-                          </div>{" "}
-                        </div>
-                      </div>
-                      <div className="col-md-4 text-center my-5 ">
-                        <div className="service-container">
-                          <div className="img-service-container">
-                            <img src={middle} className="w-100" alt="" />
-                          </div>{" "}
-                          <div>
-                            {" "}
-                            <h4 className="text-warning my-3"> </h4>
-                            <h2 className="text-warning my-5">
-                              Armada Restraunt{" "}
-                            </h2>
-                            <div className=" d-flex justify-content-between align-items-center">
-                              {" "}
-                              <h5 className="text-start m-5  ">Web Design</h5>
-                              <div className="d-flex  m-5 justify-content-around align-items-end ">
-                                {" "}
-                                <ImStatsBars className=" fs-1 me-2" />
-                                <h5>123</h5>
-                              </div>{" "}
-                            </div>
-                          </div>{" "}
-                        </div>
-                      </div>
-                      <div className="col-md-4 text-center my-5 ">
-                        <div className="service-container">
-                          <div className="img-service-container">
-                            <img src={middle} className="w-100" alt="" />
-                          </div>{" "}
-                          <div>
-                            {" "}
-                            <h4 className="text-warning my-3"> </h4>
-                            <h2 className="text-warning my-5">
-                              Armada Restraunt{" "}
-                            </h2>
-                            <div className=" d-flex justify-content-between align-items-center">
-                              {" "}
-                              <h5 className="text-start m-5  ">Web Design</h5>
-                              <div className="d-flex  m-5 justify-content-around align-items-end ">
-                                {" "}
-                                <ImStatsBars className=" fs-1 me-2" />
-                                <h5>123</h5>
-                              </div>{" "}
-                            </div>
-                          </div>{" "}
-                        </div>
-                      </div>
+                    <h4 className="text-warning my-3"> </h4>
+                    <h2 className="text-warning my-5">Armada Restraunt </h2>
+                    <div className=" d-flex justify-content-between align-items-center">
+                      {" "}
+                      <h5 className="text-start m-5  ">Web Design</h5>
+                      <div className="d-flex  m-5 justify-content-around align-items-end ">
+                        {" "}
+                        <ImStatsBars className=" fs-1 me-2" />
+                        <h5>123</h5>
+                      </div>{" "}
                     </div>
-                  </div>
+                  </div>{" "}
                 </div>
-              </Carousel.Item>
-              <Carousel.Item className="my-5    ">
-                <div className="d-flex justify-content-center">
-                  {" "}
-                  <div className="form-service-container m-auto">
+              </div>
+              <div>
+                {" "}
+                <div className="service-container">
+                  <div className="img-service-container">
+                    <img src={middle} className="w-100" alt="" />
+                  </div>{" "}
+                  <div>
                     {" "}
-                    <div className="row ">
-                      <div className="col-md-4 text-center my-5 ">
-                        <div className="service-container">
-                          <div className="img-service-container">
-                            <img src={middle} className="w-100" alt="" />
-                          </div>{" "}
-                          <div>
-                            {" "}
-                            <h4 className="text-warning my-3"> </h4>
-                            <h2 className="text-warning my-5">
-                              Armada Restraunt{" "}
-                            </h2>
-                            <div className=" d-flex justify-content-between align-items-center">
-                              {" "}
-                              <h5 className="text-start m-5  ">Web Design</h5>
-                              <div className="d-flex  m-5 justify-content-around align-items-end ">
-                                {" "}
-                                <ImStatsBars className=" fs-1 me-2" />
-                                <h5>123</h5>
-                              </div>{" "}
-                            </div>
-                          </div>{" "}
-                        </div>
-                      </div>
-                      <div className="col-md-4 text-center my-5 ">
-                        <div className="service-container">
-                          <div className="img-service-container">
-                            <img src={middle} className="w-100" alt="" />
-                          </div>{" "}
-                          <div>
-                            {" "}
-                            <h4 className="text-warning my-3"> </h4>
-                            <h2 className="text-warning my-5">
-                              Armada Restraunt{" "}
-                            </h2>
-                            <div className=" d-flex justify-content-between align-items-center">
-                              {" "}
-                              <h5 className="text-start m-5  ">Web Design</h5>
-                              <div className="d-flex  m-5 justify-content-around align-items-end ">
-                                {" "}
-                                <ImStatsBars className=" fs-1 me-2" />
-                                <h5>123</h5>
-                              </div>{" "}
-                            </div>
-                          </div>{" "}
-                        </div>
-                      </div>
-                      <div className="col-md-4 text-center my-5 ">
-                        <div className="service-container">
-                          <div className="img-service-container">
-                            <img src={middle} className="w-100" alt="" />
-                          </div>{" "}
-                          <div>
-                            {" "}
-                            <h4 className="text-warning my-3"> </h4>
-                            <h2 className="text-warning my-5">
-                              Armada Restraunt{" "}
-                            </h2>
-                            <div className=" d-flex justify-content-between align-items-center">
-                              {" "}
-                              <h5 className="text-start m-5  ">Web Design</h5>
-                              <div className="d-flex  m-5 justify-content-around align-items-end ">
-                                {" "}
-                                <ImStatsBars className=" fs-1 me-2" />
-                                <h5>123</h5>
-                              </div>{" "}
-                            </div>
-                          </div>{" "}
-                        </div>
-                      </div>
+                    <h4 className="text-warning my-3"> </h4>
+                    <h2 className="text-warning my-5">Armada Restraunt </h2>
+                    <div className=" d-flex justify-content-between align-items-center">
+                      {" "}
+                      <h5 className="text-start m-5  ">Web Design</h5>
+                      <div className="d-flex  m-5 justify-content-around align-items-end ">
+                        {" "}
+                        <ImStatsBars className=" fs-1 me-2" />
+                        <h5>123</h5>
+                      </div>{" "}
                     </div>
-                  </div>
+                  </div>{" "}
                 </div>
-              </Carousel.Item>
+              </div>
+              <div>
+                {" "}
+                <div className="service-container">
+                  <div className="img-service-container">
+                    <img src={middle} className="w-100" alt="" />
+                  </div>{" "}
+                  <div>
+                    {" "}
+                    <h4 className="text-warning my-3"> </h4>
+                    <h2 className="text-warning my-5">Armada Restraunt </h2>
+                    <div className=" d-flex justify-content-between align-items-center">
+                      {" "}
+                      <h5 className="text-start m-5  ">Web Design</h5>
+                      <div className="d-flex  m-5 justify-content-around align-items-end ">
+                        {" "}
+                        <ImStatsBars className=" fs-1 me-2" />
+                        <h5>123</h5>
+                      </div>{" "}
+                    </div>
+                  </div>{" "}
+                </div>
+              </div>
+              <div>
+                {" "}
+                <div className="service-container">
+                  <div className="img-service-container">
+                    <img src={middle} className="w-100" alt="" />
+                  </div>{" "}
+                  <div>
+                    {" "}
+                    <h4 className="text-warning my-3"> </h4>
+                    <h2 className="text-warning my-5">Armada Restraunt </h2>
+                    <div className=" d-flex justify-content-between align-items-center">
+                      {" "}
+                      <h5 className="text-start m-5  ">Web Design</h5>
+                      <div className="d-flex  m-5 justify-content-around align-items-end ">
+                        {" "}
+                        <ImStatsBars className=" fs-1 me-2" />
+                        <h5>123</h5>
+                      </div>{" "}
+                    </div>
+                  </div>{" "}
+                </div>
+              </div>
             </Carousel>
+            ;
+            {/* <Carousel>
+              <Carousel.Item className="my-5    ">
+                <div className="d-flex justify-content-center">
+                  {" "}
+                  <div className="form-service-container m-auto">
+                    {" "}
+                    <div className="row ">
+                      <div className="col-md-4 text-center my-5 ">
+                        <div className="service-container">
+                          <div className="img-service-container">
+                            <img src={middle} className="w-100" alt="" />
+                          </div>{" "}
+                          <div>
+                            {" "}
+                            <h4 className="text-warning my-3"> </h4>
+                            <h2 className="text-warning my-5">
+                              Armada Restraunt{" "}
+                            </h2>
+                            <div className=" d-flex justify-content-between align-items-center">
+                              {" "}
+                              <h5 className="text-start m-5  ">Web Design</h5>
+                              <div className="d-flex  m-5 justify-content-around align-items-end ">
+                                {" "}
+                                <ImStatsBars className=" fs-1 me-2" />
+                                <h5>123</h5>
+                              </div>{" "}
+                            </div>
+                          </div>{" "}
+                        </div>
+                      </div>
+                      <div className="col-md-4 text-center my-5 ">
+                        <div className="service-container">
+                          <div className="img-service-container">
+                            <img src={middle} className="w-100" alt="" />
+                          </div>{" "}
+                          <div>
+                            {" "}
+                            <h4 className="text-warning my-3"> </h4>
+                            <h2 className="text-warning my-5">
+                              Armada Restraunt{" "}
+                            </h2>
+                            <div className=" d-flex justify-content-between align-items-center">
+                              {" "}
+                              <h5 className="text-start m-5  ">Web Design</h5>
+                              <div className="d-flex  m-5 justify-content-around align-items-end ">
+                                {" "}
+                                <ImStatsBars className=" fs-1 me-2" />
+                                <h5>123</h5>
+                              </div>{" "}
+                            </div>
+                          </div>{" "}
+                        </div>
+                      </div>
+                      <div className="col-md-4 text-center my-5 ">
+                        <div className="service-container">
+                          <div className="img-service-container">
+                            <img src={middle} className="w-100" alt="" />
+                          </div>{" "}
+                          <div>
+                            {" "}
+                            <h4 className="text-warning my-3"> </h4>
+                            <h2 className="text-warning my-5">
+                              Armada Restraunt{" "}
+                            </h2>
+                            <div className=" d-flex justify-content-between align-items-center">
+                              {" "}
+                              <h5 className="text-start m-5  ">Web Design</h5>
+                              <div className="d-flex  m-5 justify-content-around align-items-end ">
+                                {" "}
+                                <ImStatsBars className=" fs-1 me-2" />
+                                <h5>123</h5>
+                              </div>{" "}
+                            </div>
+                          </div>{" "}
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </Carousel.Item>
+              <Carousel.Item className="my-5    ">
+                <div className="d-flex justify-content-center">
+                  {" "}
+                  <div className="form-service-container m-auto">
+                    {" "}
+                    <div className="row ">
+                      <div className="col-md-4 text-center my-5 ">
+                        <div className="service-container">
+                          <div className="img-service-container">
+                            <img src={middle} className="w-100" alt="" />
+                          </div>{" "}
+                          <div>
+                            {" "}
+                            <h4 className="text-warning my-3"> </h4>
+                            <h2 className="text-warning my-5">
+                              Armada Restraunt{" "}
+                            </h2>
+                            <div className=" d-flex justify-content-between align-items-center">
+                              {" "}
+                              <h5 className="text-start m-5  ">Web Design</h5>
+                              <div className="d-flex  m-5 justify-content-around align-items-end ">
+                                {" "}
+                                <ImStatsBars className=" fs-1 me-2" />
+                                <h5>123</h5>
+                              </div>{" "}
+                            </div>
+                          </div>{" "}
+                        </div>
+                      </div>
+                      <div className="col-md-4 text-center my-5 ">
+                        <div className="service-container">
+                          <div className="img-service-container">
+                            <img src={middle} className="w-100" alt="" />
+                          </div>{" "}
+                          <div>
+                            {" "}
+                            <h4 className="text-warning my-3"> </h4>
+                            <h2 className="text-warning my-5">
+                              Armada Restraunt{" "}
+                            </h2>
+                            <div className=" d-flex justify-content-between align-items-center">
+                              {" "}
+                              <h5 className="text-start m-5  ">Web Design</h5>
+                              <div className="d-flex  m-5 justify-content-around align-items-end ">
+                                {" "}
+                                <ImStatsBars className=" fs-1 me-2" />
+                                <h5>123</h5>
+                              </div>{" "}
+                            </div>
+                          </div>{" "}
+                        </div>
+                      </div>
+                      <div className="col-md-4 text-center my-5 ">
+                        <div className="service-container">
+                          <div className="img-service-container">
+                            <img src={middle} className="w-100" alt="" />
+                          </div>{" "}
+                          <div>
+                            {" "}
+                            <h4 className="text-warning my-3"> </h4>
+                            <h2 className="text-warning my-5">
+                              Armada Restraunt{" "}
+                            </h2>
+                            <div className=" d-flex justify-content-between align-items-center">
+                              {" "}
+                              <h5 className="text-start m-5  ">Web Design</h5>
+                              <div className="d-flex  m-5 justify-content-around align-items-end ">
+                                {" "}
+                                <ImStatsBars className=" fs-1 me-2" />
+                                <h5>123</h5>
+                              </div>{" "}
+                            </div>
+                          </div>{" "}
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </Carousel.Item>
+            </Carousel> */}
             <div className="border my-5 "></div>
           </div>
         </div>

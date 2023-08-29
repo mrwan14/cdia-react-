@@ -14,7 +14,7 @@
   opacity: 0.5;
 }
 .for-heading-margin {
-  margin-left: 120px;
+  margin-left: 10%;
 }
 .img-service-container {
   border: 0;
@@ -23,9 +23,10 @@
   width: 80%;
 }
 .service-container {
-  width: 95%;
+  width: 80%;
   border: 0.1px rgb(132, 128, 128) solid;
   background-color: black;
+  margin: auto;
 }
 .service-container:hover {
   box-shadow: 0 0 1px 1px white;
@@ -35,7 +36,7 @@
   background-color: #ffd800;
   color: #111214;
 }
-.from-our-portfolio-container {
+/* .from-our-portfolio-container {
   padding: 4rem 2rem;
   display: flex;
   flex-direction: column;
@@ -43,26 +44,21 @@
   align-items: center;
   margin-bottom: 10px;
   width: 35rem;
-}
+} */
 
 @media (max-width: 1190px) {
   .for-heading-margin {
-    margin-left: 100px;
+    margin-left: 0;
   }
-  .from-our-portfolio-container {
-    width: 25rem;
-  }
+
 }
 
 @media (max-width: 991px) {
   .for-heading-margin {
-    margin-left: 70px;
-  }
-  .from-our-portfolio-container {
-    width: 17rem;
+    margin-left: 0;
   }
   .service-container {
-    width: 115%;
+    width: 90%;
   }
   html {
     font-size: 70%;
@@ -71,13 +67,10 @@
 
 @media (max-width: 768px) {
   .for-heading-margin {
-    margin-left: 40px;
-  }
-  .from-our-portfolio-container {
-    width: 16rem;
+    margin-left: 0;
   }
   .service-container {
-    width: 125%;
+    width: 90%;
   }
   html {
     font-size: 55%;
@@ -86,14 +79,17 @@
 
 @media (max-width: 450px) {
   .for-heading-margin {
-    margin-left: 40px;
+    margin-left: 0;
   }
-  .from-our-portfolio-container {
-    width: 14.6rem;
-    background-color: #ffd800;
-  }
+  /* .digital-marketing .carousel {
+    width: 300px;
+    height: 600px;
+    margin: auto;
+    overflow: hidden;
+  } */
   .service-container {
-    width: 135%;
+    width: 90%;
+    margin: auto;
   }
   html {
     font-size: 50%;

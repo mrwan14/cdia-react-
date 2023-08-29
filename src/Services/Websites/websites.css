@@ -2,6 +2,7 @@
   color: white;
   letter-spacing: 1px;
   word-spacing: 3px;
+  overflow: hidden;
 }
 .main-content {
   margin-top: 70px;
@@ -49,4 +50,30 @@
   background-color: #ffd800;
   color: #111214;
   margin-right: 100px;
+  margin-bottom: 20px;
+}
+@media (max-width: 1190px) {
+  .from-our-portfolio .btn {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 991px) {
+  .from-our-portfolio .btn {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .from-our-portfolio .btn {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 450px) {
+  .from-our-portfolio .btn {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
 }

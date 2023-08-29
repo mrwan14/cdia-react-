@@ -4,12 +4,30 @@ import slide3 from "../../images/slider3.png";
 import icon from "../../images/icons/Social Media Management 2.png";
 import digitalmarketing from "../../images/icons/Exclusive Discounts 2.png";
 import client from "../../images/clients/a sushi.jpg";
-import client2 from "../../images/clients/berry home lst.jpg";
 import { BiLinkExternal } from "react-icons/bi";
 import { BsFillBookmarkFill } from "react-icons/bs";
-import Carousel from "react-bootstrap/Carousel";
-
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
 export default function MobileApps() {
+  const responsive = {
+    superLargeDesktop: {
+      // the naming can be any, depends on you.
+      breakpoint: { max: 4000, min: 3000 },
+      items: 5,
+    },
+    desktop: {
+      breakpoint: { max: 3000, min: 1024 },
+      items: 3,
+    },
+    tablet: {
+      breakpoint: { max: 1024, min: 464 },
+      items: 2,
+    },
+    mobile: {
+      breakpoint: { max: 464, min: 0 },
+      items: 1,
+    },
+  };
   return (
     <div className="digital-marketing text-center container">
       <div className="my-5">
@@ -103,177 +121,211 @@ export default function MobileApps() {
         <div className="text-start  ">
           <h1 className=" for-heading-margin ">From Our Portfolio</h1>
         </div>
-        <Carousel>
-          <Carousel.Item className="my-5    ">
-            <div className="d-flex justify-content-center">
-              {" "}
-              <div className="form-service-container m-auto">
-                {" "}
-                <div className="row ">
-                  <div className="col-md-4 text-center my-5 ">
-                    <div className="service-container">
-                      <div className="img-service-container">
-                        <img src={client} className="w-100" alt="" />
-                      </div>{" "}
-                      <div>
-                        {" "}
-                        <h4 className="text-warning my-3">
-                          {" "}
-                          <BiLinkExternal /> Visit
-                        </h4>
-                        <h5 className=" m-5">
-                          <BsFillBookmarkFill /> Digital Marketing, Facebook{" "}
-                        </h5>
-                        <h3 className="text-warning">Armada Restraunt </h3>
-                        <p className="text-center m-5">
-                          Lorem ipsum dolor sit amet, consectetur adipisicing
-                          elit. Dolorem, ratione dolorum? Nostrum, repellat
-                          iusto vero est mollitia beatae odit obcaecati voluptas
-                          inventore aut neque animi error hic quis eaque
-                          quaerat.
-                        </p>
-                      </div>{" "}
-                    </div>
-                  </div>
-                  <div className="col-md-4 text-center my-5 ">
-                    <div className="service-container">
-                      <div className="img-service-container">
-                        <img src={client} className="w-100" alt="" />
-                      </div>{" "}
-                      <div>
-                        {" "}
-                        <h4 className="text-warning my-3">
-                          {" "}
-                          <BiLinkExternal /> Visit
-                        </h4>
-                        <h5 className=" m-5">
-                          <BsFillBookmarkFill /> Digital Marketing, Facebook{" "}
-                        </h5>
-                        <h3 className="text-warning">Armada Restraunt </h3>
-                        <p className="text-center m-5">
-                          Lorem ipsum dolor sit amet, consectetur adipisicing
-                          elit. Dolorem, ratione dolorum? Nostrum, repellat
-                          iusto vero est mollitia beatae odit obcaecati voluptas
-                          inventore aut neque animi error hic quis eaque
-                          quaerat.
-                        </p>
-                      </div>{" "}
-                    </div>
-                  </div>
-                  <div className="col-md-4 text-center my-5 ">
-                    <div className="service-container">
-                      <div className="img-service-container">
-                        <img src={client} className="w-100" alt="" />
-                      </div>{" "}
-                      <div>
-                        {" "}
-                        <h4 className="text-warning my-3">
-                          {" "}
-                          <BiLinkExternal /> Visit
-                        </h4>
-                        <h5 className=" m-5">
-                          <BsFillBookmarkFill /> Digital Marketing, Facebook{" "}
-                        </h5>
-                        <h3 className="text-warning">Armada Restraunt </h3>
-                        <p className="text-center m-5">
-                          Lorem ipsum dolor sit amet, consectetur adipisicing
-                          elit. Dolorem, ratione dolorum? Nostrum, repellat
-                          iusto vero est mollitia beatae odit obcaecati voluptas
-                          inventore aut neque animi error hic quis eaque
-                          quaerat.
-                        </p>
-                      </div>{" "}
-                    </div>
-                  </div>
-                </div>
+        <Carousel
+          swipeable={false}
+          draggable={false}
+          showDots={true}
+          responsive={responsive}
+          ssr={true} // means to render carousel on server-side.
+          infinite={true}
+          autoPlaySpeed={1000}
+          keyBoardControl={true}
+          customTransition="all .5"
+          transitionDuration={500}
+          containerClass="carousel-container"
+          removeArrowOnDeviceType={["tablet", "mobile"]}
+          dotListClass="custom-dot-list-style"
+          itemClass="carousel-item-padding-40-px"
+        >
+          <div>
+            {" "}
+            <div className="from-our-portfolio-container text-center my-5 ">
+              <div className="service-container">
+                <div className="img-service-container">
+                  <img src={client} className="w-100" alt="" />
+                </div>{" "}
+                <div>
+                  {" "}
+                  <h4 className="text-warning my-3">
+                    {" "}
+                    <BiLinkExternal /> Visit
+                  </h4>
+                  <h5 className=" m-5">
+                    <BsFillBookmarkFill /> Digital Marketing, Facebook{" "}
+                  </h5>
+                  <h3 className="text-warning">Armada Restraunt </h3>
+                  <p className="text-center m-5">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Dolorem, ratione dolorum? Nostrum, repellat iusto vero est
+                    mollitia beatae odit obcaecati voluptas inventore aut neque
+                    animi error hic quis eaque quaerat.
+                  </p>
+                </div>{" "}
               </div>
             </div>
-          </Carousel.Item>
-          <Carousel.Item className="my-5   ">
-            <div className="d-flex justify-content-center">
-              {" "}
-              <div className="form-service-container m-auto">
-                {" "}
-                <div className="row ">
-                  <div className="col-md-4 text-center my-5 ">
-                    <div className="service-container">
-                      <div className="img-service-container">
-                        <img src={client} className="w-100" alt="" />
-                      </div>{" "}
-                      <div>
-                        {" "}
-                        <h4 className="text-warning my-3">
-                          {" "}
-                          <BiLinkExternal /> Visit
-                        </h4>
-                        <h5 className=" m-5">
-                          <BsFillBookmarkFill /> Digital Marketing, Facebook{" "}
-                        </h5>
-                        <h3 className="text-warning">Armada Restraunt </h3>
-                        <p className="text-center m-5">
-                          Lorem ipsum dolor sit amet, consectetur adipisicing
-                          elit. Dolorem, ratione dolorum? Nostrum, repellat
-                          iusto vero est mollitia beatae odit obcaecati voluptas
-                          inventore aut neque animi error hic quis eaque
-                          quaerat.
-                        </p>
-                      </div>{" "}
-                    </div>
-                  </div>
-                  <div className="col-md-4 text-center my-5 ">
-                    <div className="service-container">
-                      <div className="img-service-container">
-                        <img src={client} className="w-100" alt="" />
-                      </div>{" "}
-                      <div>
-                        {" "}
-                        <h4 className="text-warning my-3">
-                          {" "}
-                          <BiLinkExternal /> Visit
-                        </h4>
-                        <h5 className=" m-5">
-                          <BsFillBookmarkFill /> Digital Marketing, Facebook{" "}
-                        </h5>
-                        <h3 className="text-warning">Armada Restraunt </h3>
-                        <p className="text-center m-5">
-                          Lorem ipsum dolor sit amet, consectetur adipisicing
-                          elit. Dolorem, ratione dolorum? Nostrum, repellat
-                          iusto vero est mollitia beatae odit obcaecati voluptas
-                          inventore aut neque animi error hic quis eaque
-                          quaerat.
-                        </p>
-                      </div>{" "}
-                    </div>
-                  </div>
-                  <div className="col-md-4 text-center my-5 ">
-                    <div className="service-container">
-                      <div className="img-service-container">
-                        <img src={client} className="w-100" alt="" />
-                      </div>{" "}
-                      <div>
-                        {" "}
-                        <h4 className="text-warning my-3">
-                          {" "}
-                          <BiLinkExternal /> Visit
-                        </h4>
-                        <h5 className=" m-5">
-                          <BsFillBookmarkFill /> Digital Marketing, Facebook{" "}
-                        </h5>
-                        <h3 className="text-warning">Armada Restraunt </h3>
-                        <p className="text-center m-5">
-                          Lorem ipsum dolor sit amet, consectetur adipisicing
-                          elit. Dolorem, ratione dolorum? Nostrum, repellat
-                          iusto vero est mollitia beatae odit obcaecati voluptas
-                          inventore aut neque animi error hic quis eaque
-                          quaerat.
-                        </p>
-                      </div>{" "}
-                    </div>
-                  </div>
-                </div>
+          </div>
+          <div>
+            {" "}
+            <div className="from-our-portfolio-container text-center my-5 ">
+              <div className="service-container">
+                <div className="img-service-container">
+                  <img src={client} className="w-100" alt="" />
+                </div>{" "}
+                <div>
+                  {" "}
+                  <h4 className="text-warning my-3">
+                    {" "}
+                    <BiLinkExternal /> Visit
+                  </h4>
+                  <h5 className=" m-5">
+                    <BsFillBookmarkFill /> Digital Marketing, Facebook{" "}
+                  </h5>
+                  <h3 className="text-warning">Armada Restraunt </h3>
+                  <p className="text-center m-5">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Dolorem, ratione dolorum? Nostrum, repellat iusto vero est
+                    mollitia beatae odit obcaecati voluptas inventore aut neque
+                    animi error hic quis eaque quaerat.
+                  </p>
+                </div>{" "}
               </div>
             </div>
-          </Carousel.Item>
+          </div>
+          <div>
+            {" "}
+            <div className="from-our-portfolio-container text-center my-5 ">
+              <div className="service-container">
+                <div className="img-service-container">
+                  <img src={client} className="w-100" alt="" />
+                </div>{" "}
+                <div>
+                  {" "}
+                  <h4 className="text-warning my-3">
+                    {" "}
+                    <BiLinkExternal /> Visit
+                  </h4>
+                  <h5 className=" m-5">
+                    <BsFillBookmarkFill /> Digital Marketing, Facebook{" "}
+                  </h5>
+                  <h3 className="text-warning">Armada Restraunt </h3>
+                  <p className="text-center m-5">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Dolorem, ratione dolorum? Nostrum, repellat iusto vero est
+                    mollitia beatae odit obcaecati voluptas inventore aut neque
+                    animi error hic quis eaque quaerat.
+                  </p>
+                </div>{" "}
+              </div>
+            </div>
+          </div>
+          <div>
+            {" "}
+            <div className="from-our-portfolio-container text-center my-5 ">
+              <div className="service-container">
+                <div className="img-service-container">
+                  <img src={client} className="w-100" alt="" />
+                </div>{" "}
+                <div>
+                  {" "}
+                  <h4 className="text-warning my-3">
+                    {" "}
+                    <BiLinkExternal /> Visit
+                  </h4>
+                  <h5 className=" m-5">
+                    <BsFillBookmarkFill /> Digital Marketing, Facebook{" "}
+                  </h5>
+                  <h3 className="text-warning">Armada Restraunt </h3>
+                  <p className="text-center m-5">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Dolorem, ratione dolorum? Nostrum, repellat iusto vero est
+                    mollitia beatae odit obcaecati voluptas inventore aut neque
+                    animi error hic quis eaque quaerat.
+                  </p>
+                </div>{" "}
+              </div>
+            </div>
+          </div>
+          <div>
+            {" "}
+            <div className="from-our-portfolio-container text-center my-5 ">
+              <div className="service-container">
+                <div className="img-service-container">
+                  <img src={client} className="w-100" alt="" />
+                </div>{" "}
+                <div>
+                  {" "}
+                  <h4 className="text-warning my-3">
+                    {" "}
+                    <BiLinkExternal /> Visit
+                  </h4>
+                  <h5 className=" m-5">
+                    <BsFillBookmarkFill /> Digital Marketing, Facebook{" "}
+                  </h5>
+                  <h3 className="text-warning">Armada Restraunt </h3>
+                  <p className="text-center m-5">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Dolorem, ratione dolorum? Nostrum, repellat iusto vero est
+                    mollitia beatae odit obcaecati voluptas inventore aut neque
+                    animi error hic quis eaque quaerat.
+                  </p>
+                </div>{" "}
+              </div>
+            </div>
+          </div>
+          <div>
+            {" "}
+            <div className="from-our-portfolio-container text-center my-5 ">
+              <div className="service-container">
+                <div className="img-service-container">
+                  <img src={client} className="w-100" alt="" />
+                </div>{" "}
+                <div>
+                  {" "}
+                  <h4 className="text-warning my-3">
+                    {" "}
+                    <BiLinkExternal /> Visit
+                  </h4>
+                  <h5 className=" m-5">
+                    <BsFillBookmarkFill /> Digital Marketing, Facebook{" "}
+                  </h5>
+                  <h3 className="text-warning">Armada Restraunt </h3>
+                  <p className="text-center m-5">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Dolorem, ratione dolorum? Nostrum, repellat iusto vero est
+                    mollitia beatae odit obcaecati voluptas inventore aut neque
+                    animi error hic quis eaque quaerat.
+                  </p>
+                </div>{" "}
+              </div>
+            </div>
+          </div>
+          <div>
+            {" "}
+            <div className="from-our-portfolio-container text-center my-5 ">
+              <div className="service-container">
+                <div className="img-service-container">
+                  <img src={client} className="w-100" alt="" />
+                </div>{" "}
+                <div>
+                  {" "}
+                  <h4 className="text-warning my-3">
+                    {" "}
+                    <BiLinkExternal /> Visit
+                  </h4>
+                  <h5 className=" m-5">
+                    <BsFillBookmarkFill /> Digital Marketing, Facebook{" "}
+                  </h5>
+                  <h3 className="text-warning">Armada Restraunt </h3>
+                  <p className="text-center m-5">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Dolorem, ratione dolorum? Nostrum, repellat iusto vero est
+                    mollitia beatae odit obcaecati voluptas inventore aut neque
+                    animi error hic quis eaque quaerat.
+                  </p>
+                </div>{" "}
+              </div>
+            </div>
+          </div>
         </Carousel>
         <button className="btn btn-Portfolio"> Show All Portfolio</button>
       </div>
