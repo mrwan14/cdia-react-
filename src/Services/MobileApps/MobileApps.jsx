@@ -53,65 +53,65 @@ export default function MobileApps() {
       </div>
       <div className=" for-margin">
         <div className="row  ">
-          <div className="col-md-5 offset-1 text-start ">
+          <div className="col-sm-5 offset-1 text-start ">
             <div>
               {" "}
               <img src={icon} alt="" className=" rounded-circle w-25" />
             </div>{" "}
             <h1 className="mb-4">Marketing Plan</h1>
-            <h3 className="fw-light">
-              We appreciate your project idea and seek for adding a real value
-              for it through a professional marketing plan that serve your
-              activity in a practical way through a precise idea, content and
-              targeting for your ads and modern and flexible engagement of your
-              audience.
+            <h3 className="fw-light py-5 px-2 ">
+              We appreciate your project idea and seek for adding a real <br />{" "}
+              value for it through a professional marketing plan that serve{" "}
+              <br /> your activity in a practical way through a precise idea,
+              <br /> content and targeting for your ads and modern and flexible
+              engagement of your audience.
             </h3>
           </div>
-          <div className="col-md-5  offset-1 for-right-margin text-start ">
+          <div className="col-sm-5  offset-1 for-right-margin text-start ">
             <div>
               {" "}
               <img src={icon} alt="" className=" rounded-circle w-25" />
             </div>{" "}
             <h1 className="mb-4">Marketing Plan</h1>
-            <h3 className="fw-light">
-              We appreciate your project idea and seek for adding a real value
-              for it through a professional marketing plan that serve your
-              activity in a practical way through a precise idea, content and
-              targeting for your ads and modern and flexible engagement of your
-              audience.
-            </h3>{" "}
+            <h3 className="fw-light py-5 px-2 ">
+              We appreciate your project idea and seek for adding a real <br />{" "}
+              value for it through a professional marketing plan that serve{" "}
+              <br /> your activity in a practical way through a precise idea,
+              <br /> content and targeting for your ads and modern and flexible
+              engagement of your audience.
+            </h3>
           </div>
         </div>
       </div>
       <div className=" for-margin">
         <div className="row  ">
-          <div className="col-md-5 offset-1 text-start ">
+          <div className="col-sm-5 offset-1 text-start ">
             <div>
               {" "}
               <img src={icon} alt="" className=" rounded-circle w-25" />
             </div>{" "}
             <h1 className="mb-4">Marketing Plan</h1>
-            <h3 className="fw-light">
-              We appreciate your project idea and seek for adding a real value
-              for it through a professional marketing plan that serve your
-              activity in a practical way through a precise idea, content and
-              targeting for your ads and modern and flexible engagement of your
-              audience.
+            <h3 className="fw-light py-5 px-2 ">
+              We appreciate your project idea and seek for adding a real <br />{" "}
+              value for it through a professional marketing plan that serve{" "}
+              <br /> your activity in a practical way through a precise idea,
+              <br /> content and targeting for your ads and modern and flexible
+              engagement of your audience.
             </h3>
           </div>
-          <div className="col-md-5  offset-1 for-right-margin text-start ">
+          <div className="col-sm-5  offset-1 for-right-margin text-start ">
             <div>
               {" "}
               <img src={icon} alt="" className=" rounded-circle w-25" />
             </div>{" "}
             <h1 className="mb-4">Marketing Plan</h1>
-            <h3 className="fw-light">
-              We appreciate your project idea and seek for adding a real value
-              for it through a professional marketing plan that serve your
-              activity in a practical way through a precise idea, content and
-              targeting for your ads and modern and flexible engagement of your
-              audience.
-            </h3>{" "}
+            <h3 className="fw-light py-5 px-2 ">
+              We appreciate your project idea and seek for adding a real <br />{" "}
+              value for it through a professional marketing plan that serve{" "}
+              <br /> your activity in a practical way through a precise idea,
+              <br /> content and targeting for your ads and modern and flexible
+              engagement of your audience.
+            </h3>
           </div>
         </div>
       </div>
@@ -337,16 +337,16 @@ export default function MobileApps() {
         <div className="text-start ">
           <h1 className=" for-heading-margin">Other Services</h1>
         </div>
-        <div className="row">
-          <div className="col-md-4 text-center my-5">
+        <div className="d-flex justify-content-between">
+          <div className=" text-center my-5">
             <img src={digitalmarketing} className="w-25" alt="" />
             <h4 className=" my-3">Digital Marketing</h4>
           </div>
-          <div className="col-md-4 text-center my-5">
+          <div className=" text-center my-5">
             <img src={digitalmarketing} className="w-25" alt="" />
             <h4 className=" my-3">Digital Marketing</h4>
           </div>
-          <div className="col-md-4 text-center my-5">
+          <div className=" text-center my-5">
             <img src={digitalmarketing} className="w-25" alt="" />
             <h4 className=" my-3">Digital Marketing</h4>
           </div>

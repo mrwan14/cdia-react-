@@ -52,6 +52,9 @@
   margin-right: 100px;
   margin-bottom: 20px;
 }
+.custom-dot-list-style {
+  height: 23px;
+}
 @media (max-width: 1190px) {
   .from-our-portfolio .btn {
     margin-right: 0;

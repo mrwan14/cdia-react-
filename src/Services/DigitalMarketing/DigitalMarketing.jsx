@@ -8,12 +8,9 @@ import client from "../../images/clients/a sushi.jpg";
 import client2 from "../../images/clients/berry home lst.jpg";
 import { BiLinkExternal } from "react-icons/bi";
 import { BsFillBookmarkFill } from "react-icons/bs";
-// import Carousel from "react-bootstrap/Carousel";
-import { Link } from "react-router-dom";
-import logo from "../../images/Cdia logo.png";
-
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+
 export default function DigitalMarketing() {
   const responsive = {
     superLargeDesktop: {
@@ -46,10 +43,10 @@ export default function DigitalMarketing() {
         <div className="row  ">
           <div className="col-sm-5 offset-1 text-start ">
             <h1 className="my-5">Social media</h1>
-            <h3 className="fw-light py-5 px-2  ">
+            <h3 className="fw-light py-3 px-2  ">
               We are talking here about right targeting, it’s not just social
-              media! <br /> <br /> HERE, We make sure that you will reach your
-              perfect target and get successful outputs.
+              media! <br /> HERE, We make sure that you will reach your perfect
+              target and get successful outputs.
             </h3>
           </div>
           <div className="col-sm-6 text-center ">
@@ -66,11 +63,11 @@ export default function DigitalMarketing() {
             </div>{" "}
             <h1 className="mb-4">Marketing Plan</h1>
             <h3 className="fw-light py-5 px-2 ">
-              We appreciate your project idea and seek for adding a real value
-              for it through a professional marketing plan that serve your
-              activity in a practical way through a precise idea, content and
-              targeting for your ads and modern and flexible engagement of your
-              audience.
+              We appreciate your project idea and seek for adding a real <br />{" "}
+              value for it through a professional marketing plan that serve{" "}
+              <br /> your activity in a practical way through a precise idea,
+              <br /> content and targeting for your ads and modern and flexible
+              engagement of your audience.
             </h3>
           </div>
           <div className="col-sm-5  offset-1 for-right-margin text-start ">
@@ -80,12 +77,12 @@ export default function DigitalMarketing() {
             </div>{" "}
             <h1 className="mb-4">Marketing Plan</h1>
             <h3 className="fw-light py-5 px-2 ">
-              We appreciate your project idea and seek for adding a real value
-              for it through a professional marketing plan that serve your
-              activity in a practical way through a precise idea, content and
-              targeting for your ads and modern and flexible engagement of your
-              audience.
-            </h3>{" "}
+              We appreciate your project idea and seek for adding a real <br />{" "}
+              value for it through a professional marketing plan that serve{" "}
+              <br /> your activity in a practical way through a precise idea,
+              <br /> content and targeting for your ads and modern and flexible
+              engagement of your audience.
+            </h3>
           </div>
         </div>
       </div>
@@ -98,11 +95,11 @@ export default function DigitalMarketing() {
             </div>{" "}
             <h1 className="mb-4">Marketing Plan</h1>
             <h3 className="fw-light py-5 px-2 ">
-              We appreciate your project idea and seek for adding a real value
-              for it through a professional marketing plan that serve your
-              activity in a practical way through a precise idea, content and
-              targeting for your ads and modern and flexible engagement of your
-              audience.
+              We appreciate your project idea and seek for adding a real <br />{" "}
+              value for it through a professional marketing plan that serve{" "}
+              <br /> your activity in a practical way through a precise idea,
+              <br /> content and targeting for your ads and modern and flexible
+              engagement of your audience.
             </h3>
           </div>
           <div className="col-sm-5  offset-1 for-right-margin text-start ">
@@ -112,12 +109,12 @@ export default function DigitalMarketing() {
             </div>{" "}
             <h1 className="mb-4">Marketing Plan</h1>
             <h3 className="fw-light py-5 px-2 ">
-              We appreciate your project idea and seek for adding a real value
-              for it through a professional marketing plan that serve your
-              activity in a practical way through a precise idea, content and
-              targeting for your ads and modern and flexible engagement of your
-              audience.
-            </h3>{" "}
+              We appreciate your project idea and seek for adding a real <br />{" "}
+              value for it through a professional marketing plan that serve{" "}
+              <br /> your activity in a practical way through a precise idea,
+              <br /> content and targeting for your ads and modern and flexible
+              engagement of your audience.
+            </h3>
           </div>
         </div>
       </div>
@@ -136,7 +133,7 @@ export default function DigitalMarketing() {
           infinite={true}
           autoPlaySpeed={1000}
           keyBoardControl={true}
-          customTransition="all .5"
+          customTransition="all .3"
           transitionDuration={500}
           containerClass="carousel-container"
           removeArrowOnDeviceType={["tablet", "mobile"]}
@@ -516,16 +513,16 @@ export default function DigitalMarketing() {
         <div className="text-start ">
           <h1 className=" for-heading-margin">Other Services</h1>
         </div>
-        <div className="row">
-          <div className="col-sm-4 text-center my-5">
+        <div className="d-flex justify-content-between">
+          <div className=" text-center my-5">
             <img src={digitalmarketing} className="w-25" alt="" />
             <h4 className=" my-3">Digital Marketing</h4>
           </div>
-          <div className="col-sm-4 text-center my-5">
+          <div className=" text-center my-5">
             <img src={digitalmarketing} className="w-25" alt="" />
             <h4 className=" my-3">Digital Marketing</h4>
           </div>
-          <div className="col-sm-4 text-center my-5">
+          <div className=" text-center my-5">
             <img src={digitalmarketing} className="w-25" alt="" />
             <h4 className=" my-3">Digital Marketing</h4>
           </div>
