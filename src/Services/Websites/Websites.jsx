@@ -61,8 +61,8 @@ export default function Websites() {
                 requires a special and distinguished website with a strong
                 structure and fast use. Owning a website increases the
                 opportunity to reach your customers faster at the local and
-                international levels. Cdia helps you build a website with
-                the latest SEO standards and distinct designs with powerful
+                international levels. Cdia helps you build a website with the
+                latest SEO standards and distinct designs with powerful
                 programming suitable for various commercial and non-commercial
                 fields.
               </h5>
@@ -185,7 +185,10 @@ export default function Websites() {
           <div className="mt-5 from-our-portfolio">
             <div className="  d-flex justify-content-between  align-items-center  ">
               <h1 className=" for-heading-margin ">From Our Portfolio</h1>
-              <Link to="/websites-portfolio" onClick={() => window.scrollTo(0, 0)}>
+              <Link
+                to="/websites-portfolio"
+                onClick={() => window.scrollTo(0, 0)}
+              >
                 {" "}
                 <button className="btn fs-3">Show More </button>
               </Link>{" "}
