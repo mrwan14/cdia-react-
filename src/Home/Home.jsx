@@ -28,7 +28,7 @@ export default function Home() {
     <div>
       <Swiper />
       <div className="">
-        <div className="vision container my-5 ">
+        <div className="vision container my-5  " id="vision">
           <div className="row    ">
             <div className="col-md-5  text-center bg-black text-white rounded-5  my-3">
               <div className="d-flex justify-content-center ">

@@ -16,7 +16,7 @@ export default function ContactUsFooter() {
             {" "}
             Ready To Talk? DO YOU HAVE A BIG IDEA WE CAN HELP WITH?
           </div>{" "}
-          <Link to={"/contact-us"}>
+          <Link to={"/contact-us"} onClick={() => window.scrollTo(0, 0)}>
             {" "}
             <button className="btn ms-5">Contact us</button>
           </Link>

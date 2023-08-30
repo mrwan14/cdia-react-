@@ -20,7 +20,7 @@ export default function WebsiesPortfolio() {
             <h4 className="fw-light ms-4">
               Whatever your industry, arming your business with a professional
               website boosts your credibility, and offers you 100% control on
-              how to show your work. Pixagrama provides a stunning web design
+              how to show your work. Cdia provides a stunning web design
               service, paving the way for your business to the massive
               opportunities of the digital world.
             </h4>

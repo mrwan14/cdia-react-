@@ -19,7 +19,7 @@ export default function DigitalMarketingPortfolio() {
             <h5 className=" fw-light my-5">
               We connect businesses to their optimal customers across all social
               media platforms;
-              <br /> Pixagrama provides an integrated social media marketing
+              <br /> Cdia provides an integrated social media marketing
               service, helping your brand expand and reach its perfect audience.
             </h5>
           </div>

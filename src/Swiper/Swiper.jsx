@@ -58,7 +58,7 @@ const Swiper = () => {
                   <a href="#services" className="btn">
                     view more
                   </a>
-                  <a href="#contact" className="btn">
+                  <a href="#vision" className="btn">
                     Get Started
                   </a>
                 </div>
@@ -76,7 +76,7 @@ const Swiper = () => {
                 <p>
                   Creative Designs - Social Media Management - Sponsored Ad SEO
                 </p>
-                <a href="marketingWork.html" className="btn">
+                <a href="/digital-marketing" className="btn">
                   View More
                 </a>
               </>

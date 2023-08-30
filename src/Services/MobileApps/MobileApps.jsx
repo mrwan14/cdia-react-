@@ -8,6 +8,7 @@ import { BiLinkExternal } from "react-icons/bi";
 import { BsFillBookmarkFill } from "react-icons/bs";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+import { Link } from "react-router-dom";
 export default function MobileApps() {
   const responsive = {
     superLargeDesktop: {
@@ -327,7 +328,10 @@ export default function MobileApps() {
             </div>
           </div>
         </Carousel>
-        <button className="btn btn-Portfolio"> Show All Portfolio</button>
+        <Link to="/mobile-apps-portfolio" onClick={() => window.scrollTo(0, 0)}>
+          {" "}
+          <button className="btn btn-Portfolio"> Show All Portfolio</button>
+        </Link>{" "}
       </div>
 
       <div className="border my-5 "></div>

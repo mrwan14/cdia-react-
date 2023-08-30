@@ -10,6 +10,7 @@ import { BiLinkExternal } from "react-icons/bi";
 import { BsFillBookmarkFill } from "react-icons/bs";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+import { Link } from "react-router-dom";
 
 export default function DigitalMarketing() {
   const responsive = {
@@ -32,7 +33,10 @@ export default function DigitalMarketing() {
     },
   };
   return (
-    <div className="digital-marketing text-center container">
+    <div
+      className="digital-marketing text-center container"
+      id="digital-marketing"
+    >
       <div className="my-5">
         <img src={DigitalMarketingImg} alt="" className="w-50 my-5" />
       </div>
@@ -503,7 +507,9 @@ export default function DigitalMarketing() {
             </div>
           </Carousel.Item>
         </Carousel> */}
-        <button className="btn btn-Portfolio"> Show All Portfolio</button>
+        <Link to="/digital-marketing-portfolio"  onClick={() => window.scrollTo(0, 0)} >
+          <button className="btn btn-Portfolio"> Show All Portfolio</button>
+        </Link>{" "}
       </div>
 
       <div className="border my-5 "></div>

@@ -7,6 +7,7 @@ import webesite from "../../images/web-design-1.png";
 import middle from "../../images/middle-image.png";
 import "./websites.css";
 import { BsWordpress } from "react-icons/bs";
+import { Link } from "react-router-dom";
 
 export default function Websites() {
   const responsive = {
@@ -53,14 +54,14 @@ export default function Websites() {
           <div className="col-md-5 p-5 ">
             <div>
               <h1 className="mt-5">
-                Pixagrama is the best choice for <br /> building your website
+                Cdia is the best choice for <br /> building your website
               </h1>{" "}
               <h5 className="fw-light  mt-5 ">
                 Developing your brand and appearing it among competitors
                 requires a special and distinguished website with a strong
                 structure and fast use. Owning a website increases the
                 opportunity to reach your customers faster at the local and
-                international levels. Pixagrama helps you build a website with
+                international levels. Cdia helps you build a website with
                 the latest SEO standards and distinct designs with powerful
                 programming suitable for various commercial and non-commercial
                 fields.
@@ -111,7 +112,13 @@ export default function Websites() {
                 Show your website on all search engines and make it suitable for
                 all devices and screens
               </h4>{" "}
-              <button className="btn fs-5 mt-5"> Order Your Website Now</button>
+              <Link to="/contact-us" onClick={() => window.scrollTo(0, 0)}>
+                {" "}
+                <button className="btn fs-5 mt-5">
+                  {" "}
+                  Order Your Website Now
+                </button>
+              </Link>{" "}
             </div>
           </div>
         </div>
@@ -165,7 +172,7 @@ export default function Websites() {
                 </div>
               </div>
               <div>
-              <div className="my-5">
+                <div className="my-5">
                   <FaBriefcaseMedical className="website-carsoul-icons" />
 
                   <h4 className="">Medical Fields</h4>
@@ -178,7 +185,10 @@ export default function Websites() {
           <div className="mt-5 from-our-portfolio">
             <div className="  d-flex justify-content-between  align-items-center  ">
               <h1 className=" for-heading-margin ">From Our Portfolio</h1>
-              <button className="btn fs-3">Show More </button>
+              <Link to="/websites-portfolio" onClick={() => window.scrollTo(0, 0)}>
+                {" "}
+                <button className="btn fs-3">Show More </button>
+              </Link>{" "}
             </div>
             <Carousel
               swipeable={false}
