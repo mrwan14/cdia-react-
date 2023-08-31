@@ -46,7 +46,7 @@ export default function About() {
                 exceptional software and dynamic marketing, providing businesses
                 with a holistic approach to growth.
               </h4>
-              <h3 class="bg-warning text-white my-5 w-25 p-2">
+              <h3 class="this-is-not-all-container ">
                 This Is Not All .....
               </h3>
             </div>

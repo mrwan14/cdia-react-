@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
 
 :root {
-  --main-color: #ffd800;
+  --main-color: #fffc00;
   --black: #000;
   --upheader-color: #423b3b;
   --semi-light-color: #747272;
@@ -106,7 +106,7 @@ ul {
   padding: 20px;
 }
 .img-container {
-  background-color: #ffd800;
+  background-color: #fffc00;
   border-radius: 50%;
   width: 100px;
   height: 100px;

@@ -23,7 +23,7 @@
   height: 60vh;
 }
 .main-color {
-  color: #ffd800;
+  color: #fffc00;
 }
 .form-heading {
   font-size: 40px;
@@ -31,7 +31,7 @@
 
 .contact-us .btn {
   font-size: 2rem;
-  background-color: #ffd800;
+  background-color: #fffc00;
   color: black;
   border-radius: 1rem;
   border: 0;
@@ -40,7 +40,7 @@
 .icon-container {
   width: 50px;
   height: 50px;
-  background-color: #ffd800;
+  background-color: #fffc00;
   display: flex;
   justify-content: center;
   align-items: center;
