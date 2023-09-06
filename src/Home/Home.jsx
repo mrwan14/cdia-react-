@@ -56,7 +56,7 @@ export default function Home() {
                 />
               </div>
             </div>
-            <div className="col-md-5 offset-lg-2 text-center bg-black text-white rounded-5 my-3">
+            <div className="col-md-5 offset-md-2 text-center bg-black text-white rounded-5 my-3">
               <div className="d-flex justify-content-center ">
                 <div className="img-container ">
                   {" "}
@@ -93,9 +93,9 @@ export default function Home() {
           <div className="box-container">
             {" "}
             <div className="row">
-              <div className="col-md-6 col-lg-4  col-sm-12">
+              <div className="col-md-6 col-lg-4  col-sm-12 ms">
                 {" "}
-                <div className="box ms-3 ">
+                <div className="box  ">
                   <div class="flip-card-inner">
                     <div class="flip-card-front  ">
                       <div className="my-5">
@@ -122,7 +122,7 @@ export default function Home() {
               </div>
               <div className="col-md-6 col-lg-4  col-sm-12">
                 {" "}
-                <div className="box ms-3 ">
+                <div className="box  ">
                   <div class="flip-card-inner">
                     <div class="flip-card-front  ">
                       <div className="my-5">
@@ -149,7 +149,7 @@ export default function Home() {
               </div>
               <div className="col-md-6 col-lg-4  col-sm-12">
                 {" "}
-                <div className="box ms-3  ">
+                <div className="box   ">
                   <div class="flip-card-inner">
                     <div class="flip-card-front  ">
                       <div className="my-5">
@@ -176,7 +176,7 @@ export default function Home() {
 
               <div className="col-md-6 col-lg-4  col-sm-12">
                 {" "}
-                <div className="box ms-3 ">
+                <div className="box  ">
                   <div class="flip-card-inner">
                     <div class="flip-card-front  ">
                       <div className="my-5">

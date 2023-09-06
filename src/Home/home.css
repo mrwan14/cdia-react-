@@ -311,10 +311,16 @@ ul {
     font-style: oblique;
     word-spacing: 2px;
   }
+  .services .box-container .box {
+    margin-left: 30px;
+  }
 }
 
 @media (max-width: 450px) {
   html {
     font-size: 50%;
+  }
+  .services .box-container .box {
+    margin-left: 20px;
   }
 }
